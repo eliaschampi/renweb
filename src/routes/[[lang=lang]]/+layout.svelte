@@ -233,13 +233,10 @@
 				{#if collapsed}
 					<Dropdown placement="right-start" class="ren-width--full">
 						{#snippet trigger(props)}
-							<Button
-								{...props}
-								variant={groupHasPage(entry) ? 'flat' : 'ghost'}
-								icon={entry.icon}
-								aria-label={entry.label[lang]}
-								class="ren-width--full"
-							/>
+							<SidebarItem {...props} collapsed current={groupHasPage(entry)}>
+								{#snippet icon()}<Icon icon={entry.icon} />{/snippet}
+								{entry.label[lang]}
+							</SidebarItem>
 						{/snippet}
 						{#each entry.items as child (child.path)}
 							<DropdownItem href={link(child.path)} icon={child.icon}>

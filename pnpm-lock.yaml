@@ -12,8 +12,8 @@ importers:
         specifier: ^1.59.0
         version: 1.59.0(svelte@5.57.2)
       '@renui/svelte':
-        specifier: ^2.0.0
-        version: 2.0.0(svelte@5.57.2)
+        specifier: ^2.0.1
+        version: 2.0.1(svelte@5.57.2)
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
@@ -75,8 +75,8 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@renui/svelte@2.0.0':
-    resolution: {integrity: sha512-dJTAdJ8v6SZSsGI5xQM5VvEnIXFt7W4zptR5creBC5Rd+fePA6z1R93Lvk6NEmmTXpkmkZeI1RhXJB4Cy+5gZQ==}
+  '@renui/svelte@2.0.1':
+    resolution: {integrity: sha512-OGA5FkBArcEhdRMZg7e3l2VaY6YOkHI5j273J4maUYLEDpxmFR+Mg030v3fgo4h1kexPfwp5mAc/gVBx4/w7iA==}
     peerDependencies:
       svelte: ^5.56.4
 
@@ -553,7 +553,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@renui/svelte@2.0.0(svelte@5.57.2)':
+  '@renui/svelte@2.0.1(svelte@5.57.2)':
     dependencies:
       '@lucide/svelte': 1.59.0(svelte@5.57.2)
       esm-env: 1.2.2

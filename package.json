@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.59.0",
-		"@renui/svelte": "^2.0.0"
+		"@renui/svelte": "^2.0.1"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",
