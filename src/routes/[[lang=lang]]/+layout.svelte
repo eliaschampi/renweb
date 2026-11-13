@@ -7,6 +7,8 @@
 	import { onMount, tick, type Snippet } from 'svelte';
 	import {
 		Button,
+		Dropdown,
+		DropdownItem,
 		Icon,
 		IconBadge,
 		Navbar,
@@ -93,8 +95,7 @@
 	const groupOpen = (group: NavGroup): boolean => openedGroups[group.id] ?? groupHasPage(group);
 
 	function toggleGroup(group: NavGroup): void {
-		if (collapsed) setNavigationMode('expanded');
-		openedGroups[group.id] = collapsed || !groupOpen(group);
+		openedGroups[group.id] = !groupOpen(group);
 	}
 
 	const absoluteUrl = (target: Lang): string => {
@@ -229,35 +230,47 @@
 
 		{#each NAVIGATION as entry (isGroup(entry) ? entry.id : entry.path)}
 			{#if isGroup(entry)}
-				{@const open = groupOpen(entry) && !collapsed}
-				<SidebarItem
-					current={collapsed && groupHasPage(entry)}
-					expanded={collapsed ? undefined : open}
-					{collapsed}
-					onclick={() => toggleGroup(entry)}
-				>
-					{#snippet icon()}<Icon icon={entry.icon} />{/snippet}
-					<span class="lumi-sidebar-nav-label">
-						<span>{entry.label[lang]}</span>
-						{#if !collapsed}
-							<Icon icon={open ? ChevronUp : ChevronDown} size="xs" />
-						{/if}
-					</span>
-				</SidebarItem>
-				{#if open}
-					<div class="lumi-sidebar-subitems">
+				{#if collapsed}
+					<Dropdown placement="right-start" class="lumi-width--full">
+						{#snippet trigger(props)}
+							<Button
+								{...props}
+								variant={groupHasPage(entry) ? 'flat' : 'ghost'}
+								icon={entry.icon}
+								aria-label={entry.label[lang]}
+								class="lumi-width--full"
+							/>
+						{/snippet}
 						{#each entry.items as child (child.path)}
-							<SidebarItem
-								href={link(child.path)}
-								level="sub"
-								current={child === item}
-								onclick={closeDrawer}
-							>
-								{#snippet icon()}<Icon icon={child.icon} size="sm" />{/snippet}
+							<DropdownItem href={link(child.path)} icon={child.icon}>
 								{child.label[lang]}
-							</SidebarItem>
+							</DropdownItem>
 						{/each}
-					</div>
+					</Dropdown>
+				{:else}
+					{@const open = groupOpen(entry)}
+					<SidebarItem expanded={open} onclick={() => toggleGroup(entry)}>
+						{#snippet icon()}<Icon icon={entry.icon} />{/snippet}
+						<span class="lumi-sidebar-nav-label">
+							<span>{entry.label[lang]}</span>
+							<Icon icon={open ? ChevronUp : ChevronDown} size="xs" />
+						</span>
+					</SidebarItem>
+					{#if open}
+						<div class="lumi-sidebar-subitems">
+							{#each entry.items as child (child.path)}
+								<SidebarItem
+									href={link(child.path)}
+									level="sub"
+									current={child === item}
+									onclick={closeDrawer}
+								>
+									{#snippet icon()}<Icon icon={child.icon} size="sm" />{/snippet}
+									{child.label[lang]}
+								</SidebarItem>
+							{/each}
+						</div>
+					{/if}
 				{/if}
 			{:else}
 				<SidebarItem

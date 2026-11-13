@@ -20,8 +20,8 @@
 		<div class="lumi-bg--control lumi-border--light lumi-padding--xs">
 			<code class="lumi-text--xs">lumi-bg--control</code>
 		</div>
-		<div class="lumi-bg--glass lumi-padding--xs">
-			<code class="lumi-text--xs">lumi-bg--glass</code>
+		<div class="lumi-bg--primary lumi-padding--xs">
+			<code class="lumi-text--xs">lumi-bg--primary</code>
 		</div>
 	</div>
 </div>

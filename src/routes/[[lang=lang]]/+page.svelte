@@ -40,7 +40,7 @@
 		en: {
 			subtitle: 'Lightweight, accessible Svelte 5 components, in English and Spanish.',
 			heroTitle: 'From idea to interface',
-			hero: 'Forms, tables, navigation and dialogs that share one visual identity. Combine typed components, semantic tokens and layout classes in your Svelte app.',
+			hero: 'Meet Lumen: crisp surfaces, quiet depth and consistent semantic color. Forms, tables, navigation and dialogs share one lightweight visual system in your Svelte app.',
 			start: 'Get started',
 			npm: 'View on npm',
 			showCode: 'See the code of this example',
@@ -59,7 +59,7 @@
 				},
 				{
 					title: 'One recipe per role',
-					text: 'Fields, switchers, spinners and skeletons share recipes in light and dark.'
+					text: 'One accent defines soft surfaces, selected states and readable ink. Fields and switchers share recipes in light and dark.'
 				}
 			],
 			guide: 'Full guide',
@@ -70,7 +70,7 @@
 		es: {
 			subtitle: 'Componentes Svelte 5 ligeros y accesibles, en inglés y español.',
 			heroTitle: 'De la idea a la interfaz',
-			hero: 'Formularios, tablas, navegación y diálogos con una misma identidad visual. Combina componentes tipados, tokens semánticos y clases de layout en tu aplicación Svelte.',
+			hero: 'Conoce Lumen: superficies limpias, profundidad sutil y color semántico consistente. Formularios, tablas, navegación y diálogos comparten un sistema visual ligero en tu aplicación Svelte.',
 			start: 'Empezar con Lumi',
 			npm: 'Ver en npm',
 			showCode: 'Ver el código de este ejemplo',
@@ -89,7 +89,7 @@
 				},
 				{
 					title: 'Una receta por rol',
-					text: 'Campos, selectores, spinners y skeletons comparten recetas en claro y oscuro.'
+					text: 'Un acento define superficies suaves, selección y texto legible. Campos y selectores comparten recetas en claro y oscuro.'
 				}
 			],
 			guide: 'Guía completa',

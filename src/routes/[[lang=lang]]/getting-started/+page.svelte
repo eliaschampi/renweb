@@ -45,11 +45,9 @@
 			schemeLabel: 'Appearance control',
 			schemeNote: 'Place the script and controller once, at the root. Try it in',
 			schemeLink: 'Appearance',
-			upgradeTitle: 'Coming from 0.x?',
+			upgradeTitle: 'Moving from 1.x to 2.0?',
 			upgradeIntro:
-				'From a copy of the library, the codemod rewrites props, callbacks and icons, and notes what to review by hand. Apps on 0.4 or 0.5 run migrate-0.6.mjs first.',
-			codemod: `node scripts/migrate-1.0.mjs <app>          # report
-node scripts/migrate-1.0.mjs <app> --write  # apply the changes`,
+				'Lumen keeps component props and behavior, while replacing glass surfaces and decorative gradients with clean surfaces and shared semantic tones. Replace removed CSS tokens using the migration table, then check your theme in light and dark.',
 			upgradeNote: 'Details are in the',
 			upgradeLink: 'upgrade notes',
 			issueNote: 'Found a problem?',
@@ -89,11 +87,9 @@ node scripts/migrate-1.0.mjs <app> --write  # apply the changes`,
 			schemeLabel: 'Control de apariencia',
 			schemeNote: 'Coloca el script y el controlador una sola vez, en la raíz. Pruébalo en',
 			schemeLink: 'Apariencia',
-			upgradeTitle: '¿Vienes de una versión 0.x?',
+			upgradeTitle: '¿Pasas de 1.x a 2.0?',
 			upgradeIntro:
-				'Desde una copia de la biblioteca, el codemod reescribe props, callbacks e iconos y anota lo que debes revisar a mano. Las aplicaciones en 0.4 o 0.5 ejecutan antes migrate-0.6.mjs.',
-			codemod: `node scripts/migrate-1.0.mjs <app>          # informe
-node scripts/migrate-1.0.mjs <app> --write  # aplica los cambios`,
+				'Lumen conserva las props y el comportamiento de los componentes y sustituye el cristal y los degradados decorativos por superficies limpias y tonos semánticos compartidos. Reemplaza los tokens CSS retirados con la tabla de migración y revisa tu tema en claro y oscuro.',
 			upgradeNote: 'Más detalles en las',
 			upgradeLink: 'notas de versión',
 			issueNote: '¿Encontraste un problema?',
@@ -174,7 +170,6 @@ node scripts/migrate-1.0.mjs <app> --write  # aplica los cambios`,
 		{#snippet header()}<Title title={t.upgradeTitle} level={2} size="lg" />{/snippet}
 		<div class="lumi-stack lumi-stack--md lumi-min-width--0">
 			<p class="lumi-margin--none">{t.upgradeIntro}</p>
-			<CodeBlock code={t.codemod} label="Codemod 1.0" />
 			<p class="lumi-text--sm lumi-text--muted lumi-margin--none">
 				{t.upgradeNote}
 				<a href={`${docsUrl}/UPGRADE.md`} class="lumi-text--primary">{t.upgradeLink}</a>.
