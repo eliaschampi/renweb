@@ -1,4 +1,4 @@
-import { createToaster } from '@lumi-ui/svelte';
+import { createToaster } from '@renui/svelte';
 
 /**
  * Cola única de avisos del sitio; el layout raíz la renderiza con `<Toaster>`.

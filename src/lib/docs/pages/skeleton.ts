@@ -1,8 +1,8 @@
-import type { SkeletonProps } from '@lumi-ui/svelte';
+import type { SkeletonProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Skeleton } from '@lumi-ui/svelte';`,
+	importLine: `import { Skeleton } from '@renui/svelte';`,
 	use: {
 		en: ['Content whose shape you already know', 'Reducing layout jumps while data loads'],
 		es: ['Contenido cuya forma ya conoces', 'Reducir saltos de diseño mientras cargan datos']

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import UserPlus from '@lucide/svelte/icons/user-plus';
-	import { Button, EmptyState } from '@lumi-ui/svelte';
+	import { Button, EmptyState } from '@renui/svelte';
 </script>
 
 <EmptyState

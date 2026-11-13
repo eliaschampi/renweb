@@ -1,8 +1,8 @@
-import type { ToasterProps } from '@lumi-ui/svelte';
+import type { ToasterProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Toaster, createToaster } from '@lumi-ui/svelte';`,
+	importLine: `import { Toaster, createToaster } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Confirming an action that just finished',

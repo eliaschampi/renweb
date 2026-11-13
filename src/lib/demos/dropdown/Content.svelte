@@ -1,7 +1,7 @@
 <script lang="ts">
 	import LogOut from '@lucide/svelte/icons/log-out';
 	import Settings from '@lucide/svelte/icons/settings';
-	import { Avatar, Dropdown, DropdownItem } from '@lumi-ui/svelte';
+	import { Avatar, Dropdown, DropdownItem } from '@renui/svelte';
 </script>
 
 <Dropdown aria-label="Account">

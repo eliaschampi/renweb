@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Checkbox } from '@lumi-ui/svelte';
+	import { Checkbox } from '@renui/svelte';
 
 	let accepted = $state(false);
 </script>

@@ -1,8 +1,8 @@
-import type { SliderProps } from '@lumi-ui/svelte';
+import type { SliderProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Slider } from '@lumi-ui/svelte';`,
+	importLine: `import { Slider } from '@renui/svelte';`,
 	use: {
 		en: ['A rough value inside a known range', 'Settings people adjust by feel'],
 		es: ['Un valor aproximado dentro de un rango conocido', 'Ajustes que se regulan a ojo']

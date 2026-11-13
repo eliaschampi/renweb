@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Divider } from '@lumi-ui/svelte';
+	import { Divider } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--xs">
-	<p class="lumi-margin--none">Before the line</p>
+<div class="ren-stack ren-stack--xs">
+	<p class="ren-margin--none">Before the line</p>
 	<Divider />
-	<p class="lumi-margin--none">After the line</p>
+	<p class="ren-margin--none">After the line</p>
 	<Divider label="Or continue with" />
 	<Divider variant="dashed" />
 </div>

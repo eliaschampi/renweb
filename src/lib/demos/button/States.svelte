@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '@lumi-ui/svelte';
+	import { Button } from '@renui/svelte';
 
 	let saving = $state(false);
 
@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-sm">
+<div class="ren-flex ren-flex--wrap ren-flex--gap-sm">
 	<Button variant="filled" loading={saving} onclick={save}>Save changes</Button>
 	<Button variant="filled" disabled>Not available</Button>
 	<Button variant="border" loading>Sending</Button>

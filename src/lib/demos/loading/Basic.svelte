@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Loading } from '@lumi-ui/svelte';
+	import { Loading } from '@renui/svelte';
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-align-items--center lumi-flex--gap-lg">
+<div class="ren-flex ren-flex--wrap ren-align-items--center ren-flex--gap-lg">
 	<Loading size="sm" />
 	<Loading color="secondary" />
 	<Loading size="lg" text="Loading customers…" />

@@ -1,8 +1,8 @@
-import type { CheckboxProps } from '@lumi-ui/svelte';
+import type { CheckboxProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Checkbox } from '@lumi-ui/svelte';`,
+	importLine: `import { Checkbox } from '@renui/svelte';`,
 	use: {
 		en: ['Consent inside a form', 'Several independent choices'],
 		es: ['Consentimiento dentro de un formulario', 'Varias opciones independientes']

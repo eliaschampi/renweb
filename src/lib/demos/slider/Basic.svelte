@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Slider } from '@lumi-ui/svelte';
+	import { Slider } from '@renui/svelte';
 
 	let volume = $state(40);
 </script>

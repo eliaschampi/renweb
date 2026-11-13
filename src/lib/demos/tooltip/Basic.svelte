@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Download from '@lucide/svelte/icons/download';
-	import { Button, Tooltip } from '@lumi-ui/svelte';
+	import { Button, Tooltip } from '@renui/svelte';
 </script>
 
 <Tooltip text="Download report">

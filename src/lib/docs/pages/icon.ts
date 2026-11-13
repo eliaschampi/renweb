@@ -1,16 +1,16 @@
-import type { IconProps } from '@lumi-ui/svelte';
+import type { IconProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Icon } from '@lumi-ui/svelte';`,
+	importLine: `import { Icon } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Showing a Lucide icon outside a component',
-			'Sizing and coloring an icon with Lumi tokens'
+			'Sizing and coloring an icon with RenUI tokens'
 		],
 		es: [
 			'Mostrar un icono de Lucide fuera de un componente',
-			'Ajustar tamaño y color de un icono con tokens de Lumi'
+			'Ajustar tamaño y color de un icono con tokens de RenUI'
 		]
 	},
 	avoid: {
@@ -45,13 +45,13 @@ export default {
 		},
 		{
 			name: 'size',
-			type: 'LumiSize | string',
+			type: 'RenSize | string',
 			default: "'md'",
 			text: { en: 'Scale value or a CSS size.', es: 'Valor de la escala o tamaño CSS.' }
 		},
 		{
 			name: 'color',
-			type: "LumiColor | 'muted' | 'inherit' | `var(--lumi-${string})`",
+			type: "RenColor | 'muted' | 'inherit' | `var(--ren-${string})`",
 			default: "'inherit'",
 			text: { en: 'Semantic color.', es: 'Color semántico.' }
 		},

@@ -16,11 +16,11 @@
 		Sidebar,
 		SidebarItem,
 		Toaster,
-		lumiEs,
-		setLumiLocale
-	} from '@lumi-ui/svelte';
-	import { ColorSchemeScript } from '@lumi-ui/svelte/color-scheme';
-	import '@lumi-ui/svelte/styles';
+		renEs,
+		setRenLocale
+	} from '@renui/svelte';
+	import { ColorSchemeScript } from '@renui/svelte/color-scheme';
+	import '@renui/svelte/styles';
 	import {
 		colorScheme,
 		colorSchemeOptions,
@@ -32,7 +32,7 @@
 	import { NAVIGATION, isGroup, navItemFor, pageTitle, type NavGroup } from '$lib/navigation';
 	import {
 		libraryUrl,
-		lumiVersion,
+		renVersion,
 		packageUrl,
 		repositoryUrl,
 		siteLocales,
@@ -42,13 +42,13 @@
 
 	const { children }: { children: Snippet } = $props();
 
-	// Mismo umbral que el shell de Lumi (GUIDE §4): por debajo, el menú es un panel móvil.
+	// Mismo umbral que el shell de RenUI (GUIDE §4): por debajo, el menú es un panel móvil.
 	const MOBILE_MEDIA_QUERY = '(max-width: 64rem)';
 
 	const COPY = {
 		en: {
 			navigation: 'Main navigation',
-			home: 'Lumi UI, home',
+			home: 'RenUI, home',
 			closeNavigation: 'Close navigation',
 			theme: 'Interface theme',
 			otherLanguage: 'Leer en español',
@@ -57,7 +57,7 @@
 		},
 		es: {
 			navigation: 'Navegación principal',
-			home: 'Lumi UI, inicio',
+			home: 'RenUI, inicio',
 			closeNavigation: 'Cerrar navegación',
 			theme: 'Tema de la interfaz',
 			otherLanguage: 'Read in English',
@@ -71,8 +71,8 @@
 	const t = $derived(COPY[lang]);
 	const otherLang = $derived<Lang>(lang === 'en' ? 'es' : 'en');
 
-	setLumiLocale(() =>
-		currentLang() === 'es' ? { ...siteLocales.es, messages: lumiEs } : siteLocales.en
+	setRenLocale(() =>
+		currentLang() === 'es' ? { ...siteLocales.es, messages: renEs } : siteLocales.en
 	);
 
 	let isMobile = $state(false);
@@ -182,7 +182,7 @@
 	<meta property="og:description" content={item.description[lang]} />
 	<meta property="og:url" content={absoluteUrl(lang)} />
 	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="Lumi UI" />
+	<meta property="og:site_name" content="RenUI" />
 	<meta property="og:locale" content={OG_LOCALE[lang]} />
 </svelte:head>
 
@@ -191,28 +191,28 @@
 
 <div
 	bind:this={shell}
-	class="lumi-dashboard-layout"
-	class:lumi-sidebar--is-collapsed={collapsed}
-	class:lumi-sidebar--mobile-open={drawerOpen}
+	class="ren-dashboard-layout"
+	class:ren-sidebar--is-collapsed={collapsed}
+	class:ren-sidebar--mobile-open={drawerOpen}
 >
 	<Sidebar {collapsed} mobileOpen={drawerOpen} aria-label={t.navigation}>
 		{#snippet header()}
 			<div
-				class="lumi-flex lumi-align-items--center lumi-flex--gap-sm lumi-min-width--0"
-				class:lumi-justify--between={isMobile}
-				class:lumi-justify--center={collapsed}
+				class="ren-flex ren-align-items--center ren-flex--gap-sm ren-min-width--0"
+				class:ren-justify--between={isMobile}
+				class:ren-justify--center={collapsed}
 			>
 				<a
 					href={link('/')}
-					class="lumi-flex lumi-align-items--center lumi-flex--gap-sm lumi-min-width--0 lumi-text-decoration--none"
+					class="ren-flex ren-align-items--center ren-flex--gap-sm ren-min-width--0 ren-text-decoration--none"
 					aria-label={collapsed ? t.home : undefined}
 					onclick={closeDrawer}
 				>
 					<IconBadge icon={Sparkles} color="primary" size="md" />
 					{#if !collapsed}
-						<span class="lumi-stack lumi-stack--2xs lumi-min-width--0">
-							<strong class="lumi-text--lg">Lumi UI</strong>
-							<span class="lumi-text--xs lumi-text--muted">v{lumiVersion} · Svelte 5</span>
+						<span class="ren-stack ren-stack--2xs ren-min-width--0">
+							<strong class="ren-text--lg">RenUI</strong>
+							<span class="ren-text--xs ren-text--muted">v{renVersion} · Svelte 5</span>
 						</span>
 					{/if}
 				</a>
@@ -231,14 +231,14 @@
 		{#each NAVIGATION as entry (isGroup(entry) ? entry.id : entry.path)}
 			{#if isGroup(entry)}
 				{#if collapsed}
-					<Dropdown placement="right-start" class="lumi-width--full">
+					<Dropdown placement="right-start" class="ren-width--full">
 						{#snippet trigger(props)}
 							<Button
 								{...props}
 								variant={groupHasPage(entry) ? 'flat' : 'ghost'}
 								icon={entry.icon}
 								aria-label={entry.label[lang]}
-								class="lumi-width--full"
+								class="ren-width--full"
 							/>
 						{/snippet}
 						{#each entry.items as child (child.path)}
@@ -251,13 +251,13 @@
 					{@const open = groupOpen(entry)}
 					<SidebarItem expanded={open} onclick={() => toggleGroup(entry)}>
 						{#snippet icon()}<Icon icon={entry.icon} />{/snippet}
-						<span class="lumi-sidebar-nav-label">
+						<span class="ren-sidebar-nav-label">
 							<span>{entry.label[lang]}</span>
 							<Icon icon={open ? ChevronUp : ChevronDown} size="xs" />
 						</span>
 					</SidebarItem>
 					{#if open}
-						<div class="lumi-sidebar-subitems">
+						<div class="ren-sidebar-subitems">
 							{#each entry.items as child (child.path)}
 								<SidebarItem
 									href={link(child.path)}
@@ -311,18 +311,18 @@
 		{/snippet}
 	</Navbar>
 
-	<main class="lumi-dashboard-layout__content" inert={drawerOpen}>
-		<div class="lumi-container lumi-container--ultrawide lumi-min-width--0">
+	<main class="ren-dashboard-layout__content" inert={drawerOpen}>
+		<div class="ren-container ren-container--ultrawide ren-min-width--0">
 			{#key lang}
 				{@render children()}
 			{/key}
 			<footer
-				class="lumi-flex lumi-flex--wrap lumi-flex--gap-md lumi-margin-top--lg lumi-padding-y--md lumi-text--sm lumi-text--muted"
+				class="ren-flex ren-flex--wrap ren-flex--gap-md ren-margin-top--lg ren-padding-y--md ren-text--sm ren-text--muted"
 			>
-				<span>Lumi UI v{lumiVersion} · MIT</span>
-				<a class="lumi-text--muted" href={packageUrl}>npm</a>
-				<a class="lumi-text--muted" href={`${libraryUrl}/issues`}>{t.issue}</a>
-				<a class="lumi-text--muted" href={`${repositoryUrl}/blob/main/CONTRIBUTING.md`}>
+				<span>RenUI v{renVersion} · MIT</span>
+				<a class="ren-text--muted" href={packageUrl}>npm</a>
+				<a class="ren-text--muted" href={`${libraryUrl}/issues`}>{t.issue}</a>
+				<a class="ren-text--muted" href={`${repositoryUrl}/blob/main/CONTRIBUTING.md`}>
 					{t.contribute}
 				</a>
 			</footer>
@@ -331,7 +331,7 @@
 
 	<button
 		type="button"
-		class="lumi-mobile-overlay lumi-border--none"
+		class="ren-mobile-overlay ren-border--none"
 		aria-label={t.closeNavigation}
 		tabindex="-1"
 		onclick={closeDrawer}

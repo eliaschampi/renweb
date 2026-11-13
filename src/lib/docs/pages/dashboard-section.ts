@@ -1,8 +1,8 @@
-import type { DashboardSectionProps } from '@lumi-ui/svelte';
+import type { DashboardSectionProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { DashboardSection } from '@lumi-ui/svelte';`,
+	importLine: `import { DashboardSection } from '@renui/svelte';`,
 	use: {
 		en: ['Titled panels on a dashboard', 'Blocks of a detail page with their own actions'],
 		es: [

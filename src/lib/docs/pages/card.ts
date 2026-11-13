@@ -1,8 +1,8 @@
-import type { CardProps } from '@lumi-ui/svelte';
+import type { CardProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Card } from '@lumi-ui/svelte';`,
+	importLine: `import { Card } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Grouping related information',
@@ -19,12 +19,12 @@ export default {
 		en: [
 			'A titled panel on a dashboard: use DashboardSection',
 			'Rows of records: use Table or List',
-			'Spacing alone: use lumi-stack'
+			'Spacing alone: use ren-stack'
 		],
 		es: [
 			'Un panel con título en un dashboard: usa DashboardSection',
 			'Filas de registros: usa Table o List',
-			'Solo separar contenido: usa lumi-stack'
+			'Solo separar contenido: usa ren-stack'
 		]
 	},
 	sections: [

@@ -48,29 +48,29 @@ export default {
 			id: 'tones',
 			title: { en: 'Text color', es: 'Color del texto' },
 			text: {
-				en: 'Use lumi-text--muted for secondary text and a role class for meaning. These classes adapt to light and dark on their own.',
-				es: 'Usa lumi-text--muted para el texto secundario y una clase de rol para dar significado. Estas clases se adaptan solas a claro y oscuro.'
+				en: 'Use ren-text--muted for secondary text and a role class for meaning. These classes adapt to light and dark on their own.',
+				es: 'Usa ren-text--muted para el texto secundario y una clase de rol para dar significado. Estas clases se adaptan solas a claro y oscuro.'
 			},
 			demo: 'Tones'
 		},
 		{
 			id: 'font',
-			title: { en: 'Which font Lumi uses', es: 'Qué fuente usa Lumi' },
+			title: { en: 'Which font RenUI uses', es: 'Qué fuente usa RenUI' },
 			text: {
-				en: 'The token --lumi-font-family-sans asks for Inter and then the system font, but Lumi does not load Inter: a font file would add about 47 KB to every first visit. If your app loads nothing, people see the font of their system, which is fast and free, though it varies between devices.',
-				es: 'El token --lumi-font-family-sans pide Inter y luego la fuente del sistema, pero Lumi no carga Inter: un fichero de fuente añadiría unos 47 KB a cada primera visita. Si tu aplicación no carga nada, cada persona ve la fuente de su sistema, que es rápida y no cuesta nada, aunque varía entre dispositivos.'
+				en: 'The token --ren-font-family-sans asks for Inter and then the system font, but RenUI does not load Inter: a font file would add about 47 KB to every first visit. If your app loads nothing, people see the font of their system, which is fast and free, though it varies between devices.',
+				es: 'El token --ren-font-family-sans pide Inter y luego la fuente del sistema, pero RenUI no carga Inter: un fichero de fuente añadiría unos 47 KB a cada primera visita. Si tu aplicación no carga nada, cada persona ve la fuente de su sistema, que es rápida y no cuesta nada, aunque varía entre dispositivos.'
 			},
 			snippet: {
 				label: 'Default',
-				code: `--lumi-font-family-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', sans-serif;`
+				code: `--ren-font-family-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', sans-serif;`
 			}
 		},
 		{
 			id: 'load-inter',
 			title: { en: 'Load Inter in your app', es: 'Carga Inter en tu aplicación' },
 			text: {
-				en: 'When your brand needs it, serve the file from your own app and not from a font service: the bytes are the same, but you avoid a third-party connection and get long caching. A variable file covers every weight, and the Latin subset covers English and Spanish. Keep font-display swap so text never stays hidden. No Lumi token changes, because Inter is already first in the list.',
-				es: 'Cuando tu marca lo necesite, sirve el fichero desde tu propia aplicación y no desde un servicio de fuentes: los bytes son los mismos, pero evitas una conexión a terceros y obtienes caché larga. Un fichero variable cubre todos los pesos, y el subconjunto latino cubre inglés y español. Mantén font-display swap para que el texto nunca quede oculto. No cambia ningún token de Lumi, porque Inter ya es la primera de la lista.'
+				en: 'When your brand needs it, serve the file from your own app and not from a font service: the bytes are the same, but you avoid a third-party connection and get long caching. A variable file covers every weight, and the Latin subset covers English and Spanish. Keep font-display swap so text never stays hidden. No RenUI token changes, because Inter is already first in the list.',
+				es: 'Cuando tu marca lo necesite, sirve el fichero desde tu propia aplicación y no desde un servicio de fuentes: los bytes son los mismos, pero evitas una conexión a terceros y obtienes caché larga. Un fichero variable cubre todos los pesos, y el subconjunto latino cubre inglés y español. Mantén font-display swap para que el texto nunca quede oculto. No cambia ningún token de RenUI, porque Inter ya es la primera de la lista.'
 			},
 			snippet: {
 				label: 'app.css',
@@ -93,7 +93,7 @@ export default {
 			snippet: {
 				label: 'app.css',
 				code: `:root {
-	--lumi-font-family-sans: 'Your Font', system-ui, sans-serif;
+	--ren-font-family-sans: 'Your Font', system-ui, sans-serif;
 }`
 			}
 		}

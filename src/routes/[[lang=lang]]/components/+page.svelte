@@ -7,8 +7,8 @@
 		PageHeader,
 		QuickAccessCard,
 		Title,
-		type LumiColor
-	} from '@lumi-ui/svelte';
+		type RenColor
+	} from '@renui/svelte';
 	import { currentLang, link } from '$lib/i18n';
 	import { COMPONENT_GROUPS, navItemFor } from '$lib/navigation';
 
@@ -27,7 +27,7 @@
 		}
 	} as const;
 
-	const ACCENTS: readonly LumiColor[] = ['primary', 'secondary', 'info', 'success', 'warning'];
+	const ACCENTS: readonly RenColor[] = ['primary', 'secondary', 'info', 'success', 'warning'];
 
 	const lang = $derived(currentLang());
 	const t = $derived(COPY[lang]);
@@ -46,7 +46,7 @@
 	});
 </script>
 
-<div class="lumi-stack lumi-stack--xl lumi-min-width--0">
+<div class="ren-stack ren-stack--xl ren-min-width--0">
 	<PageHeader title={page.label[lang]} subtitle={page.description[lang]} icon={Boxes} size="xl" />
 
 	<Input
@@ -59,9 +59,9 @@
 	/>
 
 	{#each groups as group, index (group.id)}
-		<section class="lumi-stack lumi-stack--md" aria-labelledby={`group-${group.id}`}>
+		<section class="ren-stack ren-stack--md" aria-labelledby={`group-${group.id}`}>
 			<Title id={`group-${group.id}`} title={group.label[lang]} level={2} size="md" />
-			<div class="lumi-grid lumi-grid--cards lumi-grid--gap-md">
+			<div class="ren-grid ren-grid--cards ren-grid--gap-md">
 				{#each group.items as item (item.path)}
 					<QuickAccessCard
 						href={link(item.path)}

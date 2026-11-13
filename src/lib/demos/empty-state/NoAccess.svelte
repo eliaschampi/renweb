@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Lock from '@lucide/svelte/icons/lock';
-	import { EmptyState } from '@lumi-ui/svelte';
+	import { EmptyState } from '@renui/svelte';
 </script>
 
 <EmptyState

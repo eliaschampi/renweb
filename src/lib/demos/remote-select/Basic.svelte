@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { RemoteSelect } from '@lumi-ui/svelte';
+	import { RemoteSelect } from '@renui/svelte';
 
 	interface Customer {
 		id: number;

@@ -1,8 +1,8 @@
-import type { DateRangeFilterProps } from '@lumi-ui/svelte';
+import type { DateRangeFilterProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { DateRangeFilter } from '@lumi-ui/svelte';`,
+	importLine: `import { DateRangeFilter } from '@renui/svelte';`,
 	use: {
 		en: ['Filtering reports and lists by date'],
 		es: ['Filtrar informes y listados por fecha']

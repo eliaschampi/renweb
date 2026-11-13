@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Plus from '@lucide/svelte/icons/plus';
-	import { Button, Dialog, Input } from '@lumi-ui/svelte';
+	import { Button, Dialog, Input } from '@renui/svelte';
 
 	let open = $state(false);
 	let saving = $state(false);
@@ -25,7 +25,7 @@
 	hideClose={saving}
 	closeOnEscape={!saving}
 >
-	<form bind:this={form} class="lumi-stack lumi-stack--md" onsubmit={save}>
+	<form bind:this={form} class="ren-stack ren-stack--md" onsubmit={save}>
 		<Input label="Full name" placeholder="Ana Torres" required />
 		<Input label="Email" type="email" placeholder="you@example.com" />
 	</form>

@@ -1,8 +1,8 @@
-import type { UserInfoProps } from '@lumi-ui/svelte';
+import type { UserInfoProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { UserInfo } from '@lumi-ui/svelte';`,
+	importLine: `import { UserInfo } from '@renui/svelte';`,
 	use: {
 		en: ['A person in a table or list', 'An avatar with a name and a line of detail'],
 		es: ['Una persona en una tabla o lista', 'Un avatar con nombre y una línea de detalle']

@@ -1,9 +1,9 @@
-<div class="lumi-stack lumi-stack--sm">
-	<p class="lumi-text--xs lumi-margin--none">Extra small: dates and captions</p>
-	<p class="lumi-text--sm lumi-margin--none">Small: tables, hints and secondary text</p>
-	<p class="lumi-margin--none">Base: reading text, with no class at all</p>
-	<p class="lumi-text--lg lumi-margin--none">Large: introductions</p>
-	<p class="lumi-text--xl lumi-margin--none">Extra large: short highlights</p>
-	<p class="lumi-text--2xl lumi-margin--none">2xl: key figures</p>
-	<p class="lumi-text--4xl lumi-margin--none">4xl: one big number</p>
+<div class="ren-stack ren-stack--sm">
+	<p class="ren-text--xs ren-margin--none">Extra small: dates and captions</p>
+	<p class="ren-text--sm ren-margin--none">Small: tables, hints and secondary text</p>
+	<p class="ren-margin--none">Base: reading text, with no class at all</p>
+	<p class="ren-text--lg ren-margin--none">Large: introductions</p>
+	<p class="ren-text--xl ren-margin--none">Extra large: short highlights</p>
+	<p class="ren-text--2xl ren-margin--none">2xl: key figures</p>
+	<p class="ren-text--4xl ren-margin--none">4xl: one big number</p>
 </div>

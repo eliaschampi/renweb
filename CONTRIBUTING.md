@@ -1,22 +1,22 @@
-# Contribuir a Lumi
+# Contribuir a RenUI
 
-Gracias por ayudar a mejorar Lumi. Las propuestas, correcciones de documentación y ejemplos reproducibles son bienvenidos.
+Gracias por ayudar a mejorar RenUI. Las propuestas, correcciones de documentación y ejemplos reproducibles son bienvenidos.
 
 ## Elige el repositorio
 
-- **[lumi](https://github.com/eliaschampi/lumi)**: este sitio, sus textos, navegación, ejemplos y publicación.
-- **[lumi-ui](https://github.com/eliaschampi/lumi-ui)**: componentes Svelte, contratos de props, tokens, accesibilidad interna y paquete npm.
+- **[renweb](https://github.com/eliaschampi/renweb)**: este sitio, sus textos, navegación, ejemplos y publicación.
+- **[renui](https://github.com/eliaschampi/renui)**: componentes Svelte, contratos de props, tokens, accesibilidad interna y paquete npm.
 
-Antes de un cambio amplio, abre un issue que describa el problema y el resultado esperado. Para un defecto, incluye versiones de Lumi y Svelte, pasos mínimos, comportamiento esperado y observado; añade una captura cuando ayude a entenderlo.
+Antes de un cambio amplio, abre un issue que describa el problema y el resultado esperado. Para un defecto, incluye versiones de RenUI y Svelte, pasos mínimos, comportamiento esperado y observado; añade una captura cuando ayude a entenderlo.
 
 ## Trabaja en el sitio
 
-Sigue la instalación del [README](./README.md). Conserva SvelteKit, Svelte 5 runes y TypeScript estricto. Los componentes, clases y tokens públicos de Lumi son el sistema visual de este proyecto: no copies su implementación ni introduzcas un segundo framework CSS.
+Sigue la instalación del [README](./README.md). Conserva SvelteKit, Svelte 5 runes y TypeScript estricto. Los componentes, clases y tokens públicos de RenUI son el sistema visual de este proyecto: no copies su implementación ni introduzcas un segundo framework CSS.
 
 - Todo texto visible existe en inglés y español: usa el tipo `Text` o un objeto `COPY` por idioma.
 - Usa `navigation.ts` para páginas y descripciones, `site.ts` para enlaces públicos y `link()` para rutas internas.
 - Escribe cada demo una vez, en inglés, en `src/lib/demos/`, y añade sus textos a `es.json`. El build falla si falta alguno. El texto mixto con `{expresiones}` debe ir en una cadena.
-- Usa antes componentes, utilidades y patrones de Lumi que CSS propio. Un bloque `<style>` debe justificar qué no ofrece la biblioteca.
+- Usa antes componentes, utilidades y patrones de RenUI que CSS propio. Un bloque `<style>` debe justificar qué no ofrece la biblioteca.
 - Usa `asset()` de SvelteKit para recursos locales.
 - Prefiere demostraciones pequeñas con estados vacíos, validación y feedback observables.
 - Identifica los datos ficticios y el alcance local de las interacciones. No simules que hay una operación de servidor.
@@ -32,13 +32,13 @@ La estructura actual es suficiente para este sitio. Añade un archivo o abstracc
 pnpm run format
 pnpm run lint
 pnpm run check
-PAGES_BASE_PATH=/lumi pnpm run build
+PAGES_BASE_PATH=/renweb pnpm run build
 git diff --check
 ```
 
 Para cambios visuales, revisa escritorio y móvil, los temas claro y oscuro, navegación con teclado y rutas directas. Para overlays, comprueba apertura, Escape, foco y retorno al disparador. Para formularios y tablas, prueba validación, restablecimiento, búsqueda sin resultados y paginación.
 
-Si cambias código de ejemplo, verifica que compile y que represente la API instalada. Si actualizas Lumi, revisa sus [notas de migración](https://github.com/eliaschampi/lumi-ui/blob/main/docs/UPGRADE.md) y conserva `pnpm-lock.yaml` en el cambio.
+Si cambias código de ejemplo, verifica que compile y que represente la API instalada. Si actualizas RenUI, revisa sus [notas de migración](https://github.com/eliaschampi/renui/blob/main/docs/UPGRADE.md) y conserva `pnpm-lock.yaml` en el cambio.
 
 ## Envía un pull request
 

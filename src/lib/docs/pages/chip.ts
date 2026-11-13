@@ -1,8 +1,8 @@
-import type { ChipProps } from '@lumi-ui/svelte';
+import type { ChipProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Chip } from '@lumi-ui/svelte';`,
+	importLine: `import { Chip } from '@renui/svelte';`,
 	use: {
 		en: [
 			'The status of a record in a table',

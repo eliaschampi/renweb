@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Card } from '@lumi-ui/svelte';
+	import { Card } from '@renui/svelte';
 </script>
 
 <Card title="Sales" subtitle="This month" spaced>
-	<p class="lumi-margin--none">Revenue grew compared with last month.</p>
+	<p class="ren-margin--none">Revenue grew compared with last month.</p>
 </Card>

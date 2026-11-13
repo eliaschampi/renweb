@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Table } from '@lumi-ui/svelte';
+	import { Button, Table } from '@renui/svelte';
 
 	interface Person {
 		id: number;
@@ -15,7 +15,7 @@
 	let selected = $state<Person[]>([]);
 </script>
 
-<div class="lumi-stack lumi-stack--sm">
+<div class="ren-stack ren-stack--sm">
 	<Table data={people} selectable bind:selected aria-label="People">
 		{#snippet thead()}
 			<th scope="col">Name</th>
@@ -25,7 +25,7 @@
 			<td>{row.name}</td>
 		{/snippet}
 	</Table>
-	<div class="lumi-flex lumi-justify--end">
+	<div class="ren-flex ren-justify--end">
 		<Button variant="border" size="sm" disabled={!selected.length}>Export selected</Button>
 	</div>
 </div>

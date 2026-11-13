@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Input } from '@lumi-ui/svelte';
+	import { Input } from '@renui/svelte';
 
 	let name = $state('');
 	const greeting = $derived(name.trim() ? `Hello, ${name.trim()}!` : 'Type your name');
 </script>
 
-<div class="lumi-stack lumi-stack--sm">
+<div class="ren-stack ren-stack--sm">
 	<Input bind:value={name} label="Name" placeholder="Your name" clearable />
-	<p class="lumi-text--muted lumi-margin--none">{greeting}</p>
+	<p class="ren-text--muted ren-margin--none">{greeting}</p>
 </div>

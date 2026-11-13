@@ -1,8 +1,8 @@
-import type { PageHeaderProps } from '@lumi-ui/svelte';
+import type { PageHeaderProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { PageHeader } from '@lumi-ui/svelte';`,
+	importLine: `import { PageHeader } from '@renui/svelte';`,
 	use: {
 		en: ['The top of every screen', 'A title with its main actions'],
 		es: ['La parte superior de cada pantalla', 'Un título con sus acciones principales']

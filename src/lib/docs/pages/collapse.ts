@@ -1,8 +1,8 @@
-import type { CollapseProps } from '@lumi-ui/svelte';
+import type { CollapseProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Collapse } from '@lumi-ui/svelte';`,
+	importLine: `import { Collapse } from '@renui/svelte';`,
 	use: {
 		en: ['Frequently asked questions', 'Secondary details that would clutter a page'],
 		es: ['Preguntas frecuentes', 'Detalles secundarios que recargarían una página']

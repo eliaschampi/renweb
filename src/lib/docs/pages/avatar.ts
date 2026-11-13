@@ -1,8 +1,8 @@
-import type { AvatarProps } from '@lumi-ui/svelte';
+import type { AvatarProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Avatar, AvatarGroup } from '@lumi-ui/svelte';`,
+	importLine: `import { Avatar, AvatarGroup } from '@renui/svelte';`,
 	use: {
 		en: ['Showing who a record belongs to', 'Account menus and message lists'],
 		es: ['Mostrar a quién pertenece un registro', 'Menús de cuenta y listas de mensajes']
@@ -16,8 +16,8 @@ export default {
 			id: 'basic',
 			title: { en: 'Initials from a name', es: 'Iniciales desde un nombre' },
 			text: {
-				en: 'Pass name and Lumi builds the initials, which also work as the fallback when a photo in src fails to load.',
-				es: 'Pasa name y Lumi construye las iniciales, que también sirven de respaldo cuando falla la foto de src.'
+				en: 'Pass name and RenUI builds the initials, which also work as the fallback when a photo in src fails to load.',
+				es: 'Pasa name y RenUI construye las iniciales, que también sirven de respaldo cuando falla la foto de src.'
 			},
 			demo: 'Basic'
 		},

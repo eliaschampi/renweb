@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Chip, List, ListItem } from '@lumi-ui/svelte';
+	import { Chip, List, ListItem } from '@renui/svelte';
 </script>
 
 <List>

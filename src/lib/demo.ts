@@ -2,7 +2,7 @@
  * Datos ficticios compartidos por las demostraciones del sitio. Una sola fuente
  * evita listas divergentes entre páginas; ningún dato sale del navegador.
  */
-import type { ChartSeriesPoint, LumiColor } from '@lumi-ui/svelte';
+import type { ChartSeriesPoint, RenColor } from '@renui/svelte';
 import type { Lang, Text } from '$lib/i18n';
 
 export type WorkspaceStatus = 'active' | 'pending' | 'paused';
@@ -15,8 +15,8 @@ export interface Workspace {
 	value: number;
 }
 
-/** Estado de dominio → semántica de Lumi (GUIDE §7: la app mapea su dominio). */
-export const WORKSPACE_STATUS: Record<WorkspaceStatus, { label: Text; color: LumiColor }> = {
+/** Estado de dominio → semántica de RenUI (GUIDE §7: la app mapea su dominio). */
+export const WORKSPACE_STATUS: Record<WorkspaceStatus, { label: Text; color: RenColor }> = {
 	active: { label: { en: 'Active', es: 'Activo' }, color: 'success' },
 	pending: { label: { en: 'Pending', es: 'Pendiente' }, color: 'warning' },
 	paused: { label: { en: 'Paused', es: 'Pausado' }, color: 'secondary' }

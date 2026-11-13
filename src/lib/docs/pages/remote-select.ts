@@ -1,7 +1,7 @@
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { RemoteSelect } from '@lumi-ui/svelte';`,
+	importLine: `import { RemoteSelect } from '@renui/svelte';`,
 	use: {
 		en: ['Lists too long to load at once', 'Searching records on your server'],
 		es: ['Listas demasiado largas para cargarlas de una vez', 'Buscar registros en tu servidor']

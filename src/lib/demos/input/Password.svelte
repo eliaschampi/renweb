@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Eye from '@lucide/svelte/icons/eye';
 	import EyeOff from '@lucide/svelte/icons/eye-off';
-	import { Input } from '@lumi-ui/svelte';
+	import { Input } from '@renui/svelte';
 
 	let visible = $state(false);
 </script>

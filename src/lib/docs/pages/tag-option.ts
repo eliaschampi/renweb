@@ -1,8 +1,8 @@
-import type { TagOptionProps } from '@lumi-ui/svelte';
+import type { TagOptionProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { TagOption } from '@lumi-ui/svelte';`,
+	importLine: `import { TagOption } from '@renui/svelte';`,
 	use: {
 		en: ['Visible choices such as sizes or variants'],
 		es: ['Opciones visibles como tallas o variantes']

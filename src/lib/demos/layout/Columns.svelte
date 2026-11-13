@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Input } from '@lumi-ui/svelte';
+	import { Input } from '@renui/svelte';
 </script>
 
-<div class="lumi-grid lumi-grid--columns-2-lg lumi-grid--gap-md">
+<div class="ren-grid ren-grid--columns-2-lg ren-grid--gap-md">
 	<Input label="First name" placeholder="Ana" />
 	<Input label="Last name" placeholder="Torres" />
 </div>

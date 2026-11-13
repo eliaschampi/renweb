@@ -1,8 +1,8 @@
-import type { FileUploadProps } from '@lumi-ui/svelte';
+import type { FileUploadProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { FileUpload } from '@lumi-ui/svelte';`,
+	importLine: `import { FileUpload } from '@renui/svelte';`,
 	use: {
 		en: ['Choosing files with drag and drop', 'Showing the state of each upload'],
 		es: ['Elegir archivos arrastrando y soltando', 'Mostrar el estado de cada subida']
@@ -16,8 +16,8 @@ export default {
 			id: 'basic',
 			title: { en: 'Choose files', es: 'Elegir archivos' },
 			text: {
-				en: 'Keep the list with bind:files, and limit the type and size. Lumi validates and shows the files; uploading them is up to your app.',
-				es: 'Guarda la lista con bind:files y limita el tipo y el tamaño. Lumi valida y muestra los archivos; subirlos corresponde a tu aplicación.'
+				en: 'Keep the list with bind:files, and limit the type and size. RenUI validates and shows the files; uploading them is up to your app.',
+				es: 'Guarda la lista con bind:files y limita el tipo y el tamaño. RenUI valida y muestra los archivos; subirlos corresponde a tu aplicación.'
 			},
 			demo: 'Basic'
 		}

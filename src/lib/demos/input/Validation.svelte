@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Input } from '@lumi-ui/svelte';
+	import { Input } from '@renui/svelte';
 
 	let email = $state('ana@');
 	const error = $derived(email.includes('.') ? undefined : 'Enter a complete email address.');

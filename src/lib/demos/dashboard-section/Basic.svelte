@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TrendingUp from '@lucide/svelte/icons/trending-up';
-	import { Button, DashboardSection, InfoItem } from '@lumi-ui/svelte';
+	import { Button, DashboardSection, InfoItem } from '@renui/svelte';
 </script>
 
 <DashboardSection title="This month" subtitle="Compared with the last one" icon={TrendingUp}>

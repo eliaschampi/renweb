@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Button, Toaster, createToaster } from '@lumi-ui/svelte';
+	import { Button, Toaster, createToaster } from '@renui/svelte';
 
 	const toaster = createToaster({ duration: 3000 });
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-sm">
+<div class="ren-flex ren-flex--wrap ren-flex--gap-sm">
 	<Button
 		variant="border"
 		color="success"

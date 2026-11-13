@@ -1,8 +1,8 @@
-import type { StatCardProps } from '@lumi-ui/svelte';
+import type { StatCardProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { StatCard } from '@lumi-ui/svelte';`,
+	importLine: `import { StatCard } from '@renui/svelte';`,
 	use: {
 		en: ['The key numbers of a dashboard'],
 		es: ['Los números clave de un dashboard']
@@ -16,8 +16,8 @@ export default {
 			id: 'basic',
 			title: { en: 'Numbers at a glance', es: 'Números de un vistazo' },
 			text: {
-				en: 'Put them in a lumi-grid--cards. With href, the whole card becomes a link to the detail.',
-				es: 'Ponlas en un lumi-grid--cards. Con href, toda la tarjeta se convierte en un enlace al detalle.'
+				en: 'Put them in a ren-grid--cards. With href, the whole card becomes a link to the detail.',
+				es: 'Ponlas en un ren-grid--cards. Con href, toda la tarjeta se convierte en un enlace al detalle.'
 			},
 			demo: 'Basic'
 		}

@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Avatar } from '@lumi-ui/svelte';
+	import { Avatar } from '@renui/svelte';
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-align-items--center lumi-flex--gap-sm">
+<div class="ren-flex ren-flex--wrap ren-align-items--center ren-flex--gap-sm">
 	<Avatar name="Ana Torres" size="sm" />
 	<Avatar name="Ana Torres" size="md" />
 	<Avatar name="Ana Torres" size="lg" />

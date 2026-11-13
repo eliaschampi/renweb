@@ -1,8 +1,8 @@
-import type { SwitchProps } from '@lumi-ui/svelte';
+import type { SwitchProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Switch } from '@lumi-ui/svelte';`,
+	importLine: `import { Switch } from '@renui/svelte';`,
 	use: {
 		en: ['Settings that apply immediately', 'Turning a feature on or off'],
 		es: ['Ajustes que se aplican de inmediato', 'Activar o desactivar una función']

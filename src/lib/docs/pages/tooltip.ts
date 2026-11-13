@@ -1,8 +1,8 @@
-import type { TooltipProps } from '@lumi-ui/svelte';
+import type { TooltipProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Tooltip } from '@lumi-ui/svelte';`,
+	importLine: `import { Tooltip } from '@renui/svelte';`,
 	use: {
 		en: ['Naming an icon button', 'A short extra detail'],
 		es: ['Nombrar un botón de icono', 'Un detalle breve adicional']
@@ -22,8 +22,8 @@ export default {
 			id: 'basic',
 			title: { en: 'Name an icon button', es: 'Nombra un botón de icono' },
 			text: {
-				en: 'It opens on hover and on keyboard focus. Lumi links the text to the control as its description. The aria-label is still needed, because a description is not a name.',
-				es: 'Se abre al señalar y al enfocar con el teclado. Lumi enlaza el texto con el control como su descripción. El aria-label sigue siendo necesario, porque una descripción no es un nombre.'
+				en: 'It opens on hover and on keyboard focus. RenUI links the text to the control as its description. The aria-label is still needed, because a description is not a name.',
+				es: 'Se abre al señalar y al enfocar con el teclado. RenUI enlaza el texto con el control como su descripción. El aria-label sigue siendo necesario, porque una descripción no es un nombre.'
 			},
 			demo: 'Basic'
 		},

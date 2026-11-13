@@ -1,8 +1,8 @@
-import type { FieldsetProps } from '@lumi-ui/svelte';
+import type { FieldsetProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Fieldset } from '@lumi-ui/svelte';`,
+	importLine: `import { Fieldset } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Dividing a long form into sections',

@@ -1,4 +1,4 @@
-import type { ListItemProps, ListProps } from '@lumi-ui/svelte';
+import type { ListItemProps, ListProps } from '@renui/svelte';
 import type { Doc, DocProp } from '../types';
 const ITEM_PROPS: DocProp<ListItemProps>[] = [
 	{ name: 'title', type: 'ListText', text: { en: 'Main line.', es: 'Línea principal.' } },
@@ -35,7 +35,7 @@ const ITEM_PROPS: DocProp<ListItemProps>[] = [
 ];
 
 export default {
-	importLine: `import { List, ListItem } from '@lumi-ui/svelte';`,
+	importLine: `import { List, ListItem } from '@renui/svelte';`,
 	use: {
 		en: ['Short rows with one or two values', 'Menus of options in a panel'],
 		es: ['Filas cortas con uno o dos valores', 'Menús de opciones en un panel']

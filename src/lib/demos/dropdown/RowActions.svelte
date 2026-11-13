@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Ellipsis from '@lucide/svelte/icons/ellipsis';
-	import { Button, Dropdown, DropdownItem } from '@lumi-ui/svelte';
+	import { Button, Dropdown, DropdownItem } from '@renui/svelte';
 </script>
 
 <Dropdown placement="bottom-end">

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { Collapse } from '@lumi-ui/svelte';
+	import { Collapse } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--xs">
+<div class="ren-stack ren-stack--xs">
 	<Collapse title="What is included?" open>
-		<p class="lumi-margin--none">Everything in the plan.</p>
+		<p class="ren-margin--none">Everything in the plan.</p>
 	</Collapse>
 	<Collapse title="Can I cancel at any time?" color="secondary">
-		<p class="lumi-margin--none">Yes, from your account.</p>
+		<p class="ren-margin--none">Yes, from your account.</p>
 	</Collapse>
 </div>

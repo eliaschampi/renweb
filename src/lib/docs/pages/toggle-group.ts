@@ -1,8 +1,8 @@
-import type { ToggleGroupProps } from '@lumi-ui/svelte';
+import type { ToggleGroupProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { ToggleGroup } from '@lumi-ui/svelte';`,
+	importLine: `import { ToggleGroup } from '@renui/svelte';`,
 	use: {
 		en: ['Several independent options on at once', 'Formatting toolbars and channel filters'],
 		es: ['Varias opciones independientes activas a la vez', 'Barras de formato y filtros de canal']
@@ -46,7 +46,7 @@ export default {
 		},
 		{
 			name: 'options',
-			type: 'LumiChoiceOption[]',
+			type: 'RenChoiceOption[]',
 			text: {
 				en: 'Options: value, label, icon, ariaLabel.',
 				es: 'Opciones: value, label, icon, ariaLabel.'

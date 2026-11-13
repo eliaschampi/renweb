@@ -1,8 +1,8 @@
-import type { ProgressProps } from '@lumi-ui/svelte';
+import type { ProgressProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Progress } from '@lumi-ui/svelte';`,
+	importLine: `import { Progress } from '@renui/svelte';`,
 	use: {
 		en: ['Work with a known percentage', 'Uploads, imports and long tasks'],
 		es: ['Trabajo con porcentaje conocido', 'Subidas, importaciones y tareas largas']

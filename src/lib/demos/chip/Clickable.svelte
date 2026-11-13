@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { Chip } from '@lumi-ui/svelte';
+	import { Chip } from '@renui/svelte';
 
 	const CATEGORIES = ['All', 'Shoes', 'Bags', 'Hats'];
 
 	let category = $state('All');
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-xs">
+<div class="ren-flex ren-flex--wrap ren-flex--gap-xs">
 	{#each CATEGORIES as name (name)}
 		<Chip color={name === category ? 'primary' : 'secondary'} onclick={() => (category = name)}>
 			{name}

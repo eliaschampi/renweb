@@ -1,15 +1,15 @@
-import type { DividerProps } from '@lumi-ui/svelte';
+import type { DividerProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Divider } from '@lumi-ui/svelte';`,
+	importLine: `import { Divider } from '@renui/svelte';`,
 	use: {
 		en: ['Separating groups of content', 'A labeled break, such as Or continue with'],
 		es: ['Separar grupos de contenido', 'Una pausa con texto, como O continúa con']
 	},
 	avoid: {
-		en: ['Space between items: use lumi-stack', 'Rows of a list: List draws its own'],
-		es: ['Espacio entre elementos: usa lumi-stack', 'Filas de una lista: List dibuja las suyas']
+		en: ['Space between items: use ren-stack', 'Rows of a list: List draws its own'],
+		es: ['Espacio entre elementos: usa ren-stack', 'Filas de una lista: List dibuja las suyas']
 	},
 	sections: [
 		{

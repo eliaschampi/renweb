@@ -22,7 +22,7 @@
 		Textarea,
 		Title,
 		type SelectValue
-	} from '@lumi-ui/svelte';
+	} from '@renui/svelte';
 	import { currentLang } from '$lib/i18n';
 	import { sourceUrl } from '$lib/site';
 	import { toaster } from '$lib/toaster';
@@ -100,7 +100,7 @@
 	const t = COPY[currentLang()];
 
 	const DEFAULTS = {
-		name: 'Lumi Workspace',
+		name: 'RenUI Workspace',
 		email: 'hello@example.com',
 		seats: 12,
 		region: 'Lima' as SelectValue | null,
@@ -157,11 +157,11 @@
 	}
 </script>
 
-<div class="lumi-stack lumi-stack--xl lumi-min-width--0">
+<div class="ren-stack ren-stack--xl ren-min-width--0">
 	<PageHeader title={t.title} subtitle={t.subtitle} icon={ClipboardPenLine} size="xl" />
-	<p class="lumi-text--sm lumi-text--muted lumi-margin--none">
+	<p class="ren-text--sm ren-text--muted ren-margin--none">
 		{t.notice}
-		<a href={sourceUrl('src/routes/[[lang=lang]]/forms/+page.svelte')} class="lumi-text--primary">
+		<a href={sourceUrl('src/routes/[[lang=lang]]/forms/+page.svelte')} class="ren-text--primary">
 			{t.source}
 		</a>.
 	</p>
@@ -170,9 +170,9 @@
 		{#snippet header()}
 			<Title title={t.cardTitle} subtitle={t.cardSubtitle} level={2} size="md" />
 		{/snippet}
-		<form bind:this={form} class="lumi-stack lumi-stack--lg" novalidate onsubmit={submit}>
+		<form bind:this={form} class="ren-stack ren-stack--lg" novalidate onsubmit={submit}>
 			<Fieldset legend={t.identity}>
-				<div class="lumi-grid lumi-grid--columns-2 lumi-grid--gap-md">
+				<div class="ren-grid ren-grid--columns-2 ren-grid--gap-md">
 					<Input
 						bind:value={values.name}
 						name="name"
@@ -224,8 +224,8 @@
 			</Fieldset>
 
 			<Fieldset legend={t.preferences}>
-				<div class="lumi-grid lumi-grid--columns-2 lumi-grid--gap-lg">
-					<div class="lumi-stack lumi-stack--md">
+				<div class="ren-grid ren-grid--columns-2 ren-grid--gap-lg">
+					<div class="ren-stack ren-stack--md">
 						<Switch
 							bind:checked={values.notifications}
 							name="notifications"
@@ -255,7 +255,7 @@
 				showCount
 			/>
 
-			<div class="lumi-flex lumi-flex--wrap lumi-justify--end lumi-flex--gap-sm">
+			<div class="ren-flex ren-flex--wrap ren-justify--end ren-flex--gap-sm">
 				<Button variant="flat" onclick={reset}>{t.reset}</Button>
 				<Button variant="filled" icon={Check} type="submit">{t.save}</Button>
 			</div>

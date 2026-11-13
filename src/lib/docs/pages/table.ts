@@ -1,8 +1,8 @@
-import type { TableProps } from '@lumi-ui/svelte';
+import type { TableProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Table } from '@lumi-ui/svelte';`,
+	importLine: `import { Table } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Records people compare, sort through or act on',

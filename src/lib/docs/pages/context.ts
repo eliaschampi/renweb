@@ -1,4 +1,4 @@
-import type { ContextItemProps, ContextProps } from '@lumi-ui/svelte';
+import type { ContextItemProps, ContextProps } from '@renui/svelte';
 import type { Doc, DocProp } from '../types';
 const ITEM_PROPS: DocProp<ContextItemProps>[] = [
 	{ name: 'title', type: 'string', text: { en: 'Label.', es: 'Etiqueta.' } },
@@ -27,7 +27,7 @@ const ITEM_PROPS: DocProp<ContextItemProps>[] = [
 ];
 
 export default {
-	importLine: `import { Context, ContextItem } from '@lumi-ui/svelte';`,
+	importLine: `import { Context, ContextItem } from '@renui/svelte';`,
 	use: {
 		en: ['Extra actions on a right click', 'Rows and cards with many actions'],
 		es: ['Acciones extra con clic derecho', 'Filas y tarjetas con muchas acciones']

@@ -1,8 +1,8 @@
-import type { IconBadgeProps } from '@lumi-ui/svelte';
+import type { IconBadgeProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { IconBadge } from '@lumi-ui/svelte';`,
+	importLine: `import { IconBadge } from '@renui/svelte';`,
 	use: {
 		en: [
 			'An icon that introduces a section or a metric',

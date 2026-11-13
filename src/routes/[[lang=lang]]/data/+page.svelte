@@ -22,8 +22,8 @@
 		type ChartSeriesPoint,
 		type DashboardChartSeries,
 		type ToggleGroupValue
-	} from '@lumi-ui/svelte';
-	import '@lumi-ui/svelte/styles/patterns.css';
+	} from '@renui/svelte';
+	import '@renui/svelte/styles/patterns.css';
 	import {
 		PREVIOUS_PERIOD_GAP,
 		SIMULATED_LATENCY_MS,
@@ -164,27 +164,27 @@
 	onDestroy(() => clearTimeout(refreshTimer));
 </script>
 
-<div class="lumi-stack lumi-stack--xl lumi-min-width--0">
+<div class="ren-stack ren-stack--xl ren-min-width--0">
 	<PageHeader title={t.title} subtitle={t.subtitle} icon={ChartBar} size="xl">
 		{#snippet actions()}
 			<Button variant="border" icon={RefreshCw} {loading} onclick={refresh}>{t.refresh}</Button>
 		{/snippet}
 	</PageHeader>
-	<p class="lumi-text--sm lumi-text--muted lumi-margin--none">
+	<p class="ren-text--sm ren-text--muted ren-margin--none">
 		{t.notice}
-		<a href={sourceUrl('src/routes/[[lang=lang]]/data/+page.svelte')} class="lumi-text--primary">
+		<a href={sourceUrl('src/routes/[[lang=lang]]/data/+page.svelte')} class="ren-text--primary">
 			{t.source}
 		</a>.
 	</p>
 
-	<div class="lumi-grid lumi-grid--columns-2 lumi-grid--columns-4-lg lumi-grid--gap-md">
+	<div class="ren-grid ren-grid--columns-2 ren-grid--columns-4-lg ren-grid--gap-md">
 		<StatCard title={t.records} value={WORKSPACES.length} icon={List} color="primary" />
 		<StatCard title={t.active} value={activeCount} icon={Activity} color="success" />
 		<StatCard title={t.selected} value={selected.length} icon={CircleCheck} color="secondary" />
 		<StatCard title={t.total} value={currency(totalValue)} icon={Wallet} color="info" />
 	</div>
 
-	<div class="lumi-dashboard-analytics-grid">
+	<div class="ren-dashboard-analytics-grid">
 		<DashboardSection title={t.trend} subtitle={t.trendSubtitle} icon={TrendingUp}>
 			<DashboardChart series={TREND} valueFormat="number" aria-label={t.trendLabel} />
 		</DashboardSection>
@@ -226,18 +226,18 @@
 				<th scope="col">{t.workspace}</th>
 				<th scope="col">{t.owner}</th>
 				<th scope="col">{t.status}</th>
-				<th scope="col" class="lumi-text--right">{t.value}</th>
+				<th scope="col" class="ren-text--right">{t.value}</th>
 			{/snippet}
 
 			{#snippet row({ row })}
-				<td class="lumi-font--medium">{row.name}</td>
+				<td class="ren-font--medium">{row.name}</td>
 				<td>{row.owner}</td>
 				<td
 					><Chip color={WORKSPACE_STATUS[row.status].color} size="sm"
 						>{WORKSPACE_STATUS[row.status].label[lang]}</Chip
 					></td
 				>
-				<td class="lumi-text--right">{currency(row.value)}</td>
+				<td class="ren-text--right">{currency(row.value)}</td>
 			{/snippet}
 		</Table>
 	</DashboardSection>

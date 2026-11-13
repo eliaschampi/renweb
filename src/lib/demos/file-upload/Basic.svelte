@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { FileUpload, type FileUploadFile } from '@lumi-ui/svelte';
+	import { FileUpload, type FileUploadFile } from '@renui/svelte';
 
 	let files = $state<FileUploadFile[]>([]);
 </script>

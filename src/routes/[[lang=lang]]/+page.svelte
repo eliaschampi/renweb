@@ -12,19 +12,19 @@
 		PageHeader,
 		QuickAccessCard,
 		Title,
-		type LumiColor
-	} from '@lumi-ui/svelte';
+		type RenColor
+	} from '@renui/svelte';
 	import CodeBlock from '$lib/CodeBlock.svelte';
 	import InstallCommand from '$lib/InstallCommand.svelte';
 	import { currentLang, link } from '$lib/i18n';
 	import { NAV_ITEMS } from '$lib/navigation';
-	import { docsUrl, libraryUrl, lumiVersion, packageUrl } from '$lib/site';
+	import { docsUrl, libraryUrl, renVersion, packageUrl } from '$lib/site';
 	import type { PageProps } from './$types';
 
 	const { data }: PageProps = $props();
 	const QuickStart = $derived(data.QuickStart);
 
-	const ACCENTS: readonly LumiColor[] = ['primary', 'secondary', 'info', 'success', 'warning'];
+	const ACCENTS: readonly RenColor[] = ['primary', 'secondary', 'info', 'success', 'warning'];
 	const DESTINATIONS = [
 		'/getting-started',
 		'/foundations/colors',
@@ -46,7 +46,7 @@
 			showCode: 'See the code of this example',
 			exploreTitle: 'Explore at your own pace',
 			exploreSubtitle: 'Each page shows a live example and the code to copy.',
-			highlightsTitle: 'Why Lumi',
+			highlightsTitle: 'Why RenUI',
 			highlightsSubtitle: 'Built and proven in real products.',
 			highlights: [
 				{
@@ -71,12 +71,12 @@
 			subtitle: 'Componentes Svelte 5 ligeros y accesibles, en inglés y español.',
 			heroTitle: 'De la idea a la interfaz',
 			hero: 'Conoce Lumen: superficies limpias, profundidad sutil y color semántico consistente. Formularios, tablas, navegación y diálogos comparten un sistema visual ligero en tu aplicación Svelte.',
-			start: 'Empezar con Lumi',
+			start: 'Empezar con RenUI',
 			npm: 'Ver en npm',
 			showCode: 'Ver el código de este ejemplo',
 			exploreTitle: 'Explora a tu ritmo',
 			exploreSubtitle: 'Cada página muestra un ejemplo vivo y el código para copiar.',
-			highlightsTitle: 'Por qué Lumi',
+			highlightsTitle: 'Por qué RenUI',
 			highlightsSubtitle: 'Creada y probada en productos reales.',
 			highlights: [
 				{
@@ -103,22 +103,22 @@
 	const t = $derived(COPY[lang]);
 </script>
 
-<div class="lumi-stack lumi-stack--xl lumi-min-width--0">
-	<PageHeader title="Lumi UI" subtitle={t.subtitle} size="xl">
+<div class="ren-stack ren-stack--xl ren-min-width--0">
+	<PageHeader title="RenUI" subtitle={t.subtitle} size="xl">
 		{#snippet actions()}
-			<Chip color="primary">v{lumiVersion}</Chip>
+			<Chip color="primary">v{renVersion}</Chip>
 		{/snippet}
 	</PageHeader>
 
-	<div class="lumi-grid lumi-grid--columns-2 lumi-grid--gap-lg">
+	<div class="ren-grid ren-grid--columns-2 ren-grid--gap-lg">
 		<Card spaced>
 			{#snippet header()}
 				<Title title={t.heroTitle} level={2} size="lg" />
 			{/snippet}
-			<div class="lumi-stack lumi-stack--lg lumi-min-width--0">
-				<p class="lumi-margin--none">{t.hero}</p>
+			<div class="ren-stack ren-stack--lg ren-min-width--0">
+				<p class="ren-margin--none">{t.hero}</p>
 				<InstallCommand />
-				<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-sm">
+				<div class="ren-flex ren-flex--wrap ren-flex--gap-sm">
 					<Button variant="filled" href={link('/getting-started')} icon={ArrowRight} iconAfter>
 						{t.start}
 					</Button>
@@ -127,7 +127,7 @@
 			</div>
 		</Card>
 
-		<div class="lumi-stack lumi-stack--md lumi-min-width--0">
+		<div class="ren-stack ren-stack--md ren-min-width--0">
 			<QuickStart />
 			<Collapse title={t.showCode}>
 				<CodeBlock code={data.quickStartCode} label="QuickStart.svelte" />
@@ -135,7 +135,7 @@
 		</div>
 	</div>
 
-	<section class="lumi-stack lumi-stack--md" aria-labelledby="explore-title">
+	<section class="ren-stack ren-stack--md" aria-labelledby="explore-title">
 		<Title
 			id="explore-title"
 			title={t.exploreTitle}
@@ -143,7 +143,7 @@
 			level={2}
 			size="lg"
 		/>
-		<div class="lumi-grid lumi-grid--cards lumi-grid--gap-md">
+		<div class="ren-grid ren-grid--cards ren-grid--gap-md">
 			{#each destinations as item, index (item.path)}
 				<QuickAccessCard
 					href={link(item.path)}
@@ -156,7 +156,7 @@
 		</div>
 	</section>
 
-	<section class="lumi-stack lumi-stack--md" aria-labelledby="highlights-title">
+	<section class="ren-stack ren-stack--md" aria-labelledby="highlights-title">
 		<Title
 			id="highlights-title"
 			title={t.highlightsTitle}
@@ -164,14 +164,14 @@
 			level={2}
 			size="lg"
 		/>
-		<div class="lumi-grid lumi-grid--columns-3 lumi-grid--gap-md">
+		<div class="ren-grid ren-grid--columns-3 ren-grid--gap-md">
 			{#each t.highlights as item, index (item.title)}
 				<DashboardSection title={item.title} icon={ICONS[index]}>
-					<p class="lumi-text--sm lumi-text--muted lumi-margin--none">{item.text}</p>
+					<p class="ren-text--sm ren-text--muted ren-margin--none">{item.text}</p>
 				</DashboardSection>
 			{/each}
 		</div>
-		<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-sm">
+		<div class="ren-flex ren-flex--wrap ren-flex--gap-sm">
 			<Button variant="border" size="sm" href={`${docsUrl}/GUIDE.md`}>{t.guide}</Button>
 			<Button variant="border" size="sm" href={`${docsUrl}/COMPONENTS.md`}>{t.catalog}</Button>
 			<Button variant="border" size="sm" href={`${docsUrl}/UPGRADE.md`}>{t.upgrade}</Button>

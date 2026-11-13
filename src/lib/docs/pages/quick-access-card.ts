@@ -1,8 +1,8 @@
-import type { QuickAccessCardProps } from '@lumi-ui/svelte';
+import type { QuickAccessCardProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { QuickAccessCard } from '@lumi-ui/svelte';`,
+	importLine: `import { QuickAccessCard } from '@renui/svelte';`,
 	use: {
 		en: ['Shortcuts on a home screen'],
 		es: ['Accesos directos en una pantalla de inicio']

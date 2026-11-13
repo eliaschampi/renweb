@@ -1,7 +1,7 @@
 import Monitor from '@lucide/svelte/icons/monitor';
 import Moon from '@lucide/svelte/icons/moon';
 import Sun from '@lucide/svelte/icons/sun';
-import type { IconComponent } from '@lumi-ui/svelte';
+import type { IconComponent } from '@renui/svelte';
 import type { Text } from '$lib/i18n';
 import {
 	createColorScheme,
@@ -9,11 +9,11 @@ import {
 	type ColorSchemeOptions,
 	type ColorSchemePreference,
 	type ResolvedColorScheme
-} from '@lumi-ui/svelte/color-scheme';
+} from '@renui/svelte/color-scheme';
 
 /** Un único objeto para el script previo al pintado y el controlador (GUIDE §3). */
 export const colorSchemeOptions = {
-	storageKey: 'lumi-web-color-scheme',
+	storageKey: 'renweb-color-scheme',
 	defaultPreference: 'system'
 } satisfies ColorSchemeOptions;
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Alert } from '@lumi-ui/svelte';
+	import { Alert } from '@renui/svelte';
 </script>
 
 <Alert color="warning" title="Your plan is about to end">

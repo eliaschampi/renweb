@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Slider } from '@lumi-ui/svelte';
+	import { Slider } from '@renui/svelte';
 
 	let discount = $state(15);
 </script>

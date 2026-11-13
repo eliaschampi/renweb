@@ -1,8 +1,8 @@
-import type { PaginationProps } from '@lumi-ui/svelte';
+import type { PaginationProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Pagination } from '@lumi-ui/svelte';`,
+	importLine: `import { Pagination } from '@renui/svelte';`,
 	use: {
 		en: ['Long lists outside a Table', 'Public pages that search engines should crawl'],
 		es: ['Listas largas fuera de una Table', 'Páginas públicas que los buscadores deben rastrear']

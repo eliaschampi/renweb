@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Chip } from '@lumi-ui/svelte';
+	import { Chip } from '@renui/svelte';
 
 	let filters = $state(['Paid', 'This week', 'Cash']);
 
@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-xs">
+<div class="ren-flex ren-flex--wrap ren-flex--gap-xs">
 	{#each filters as filter (filter)}
 		<Chip size="sm" closable closeLabel={`Remove filter: ${filter}`} onclose={() => remove(filter)}>
 			{filter}

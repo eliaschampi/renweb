@@ -1,8 +1,8 @@
-import type { SelectProps } from '@lumi-ui/svelte';
+import type { SelectProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Select } from '@lumi-ui/svelte';`,
+	importLine: `import { Select } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Choosing one option from a list',

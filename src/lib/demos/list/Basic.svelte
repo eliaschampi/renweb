@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FileText from '@lucide/svelte/icons/file-text';
-	import { List, ListItem } from '@lumi-ui/svelte';
+	import { List, ListItem } from '@renui/svelte';
 </script>
 
 <List>

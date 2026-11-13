@@ -1,14 +1,14 @@
 {
-	"name": "lumi-web",
+	"name": "renweb",
 	"version": "0.1.0",
 	"private": true,
 	"type": "module",
-	"description": "Public site of Lumi UI: bilingual documentation and live examples of the Svelte 5 library.",
+	"description": "Public site of RenUI: bilingual documentation and live examples of the Svelte 5 library.",
 	"license": "MIT",
-	"homepage": "https://eliaschampi.github.io/lumi/",
+	"homepage": "https://eliaschampi.github.io/renweb/",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/eliaschampi/lumi.git"
+		"url": "git+https://github.com/eliaschampi/renweb.git"
 	},
 	"engines": {
 		"node": ">=22.12.0"
@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.59.0",
-		"@lumi-ui/svelte": "^1.2.1"
+		"@renui/svelte": "^2.0.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",

@@ -1,8 +1,8 @@
-import type { LoadingProps } from '@lumi-ui/svelte';
+import type { LoadingProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Loading } from '@lumi-ui/svelte';`,
+	importLine: `import { Loading } from '@renui/svelte';`,
 	use: {
 		en: ['Waiting for something with an unknown layout', 'A whole panel that is loading'],
 		es: ['Esperar algo de disposición desconocida', 'Un panel completo que está cargando']

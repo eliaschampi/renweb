@@ -1,7 +1,7 @@
 <script lang="ts">
 	import LayoutGrid from '@lucide/svelte/icons/layout-grid';
 	import List from '@lucide/svelte/icons/list';
-	import { SegmentedControl } from '@lumi-ui/svelte';
+	import { SegmentedControl } from '@renui/svelte';
 
 	const VIEWS = [
 		{ value: 'grid', icon: LayoutGrid, ariaLabel: 'Grid view' },

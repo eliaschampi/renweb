@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Search from '@lucide/svelte/icons/search';
-	import { Button, EmptyState } from '@lumi-ui/svelte';
+	import { Button, EmptyState } from '@renui/svelte';
 </script>
 
 <EmptyState icon={Search} title="No results" description="Try another word or clear the filters.">

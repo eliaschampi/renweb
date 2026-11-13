@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { List, ListItem } from '@lumi-ui/svelte';
+	import { List, ListItem } from '@renui/svelte';
 
 	const ROOMS = ['Sales', 'Support', 'Billing'];
 

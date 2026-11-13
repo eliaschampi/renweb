@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { PageHeader } from '@lumi-ui/svelte';
+	import { PageHeader } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--sm">
+<div class="ren-stack ren-stack--sm">
 	<PageHeader title="Small" size="sm" />
 	<PageHeader title="Medium" />
 	<PageHeader title="Large" size="lg" />

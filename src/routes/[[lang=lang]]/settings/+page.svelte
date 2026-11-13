@@ -13,8 +13,8 @@
 		Radio,
 		SegmentedControl,
 		Title,
-		type LumiColor
-	} from '@lumi-ui/svelte';
+		type RenColor
+	} from '@renui/svelte';
 	import {
 		colorScheme,
 		resolvedThemeLabel,
@@ -70,7 +70,7 @@
 		}
 	} as const;
 
-	const PALETTE: readonly LumiColor[] = [
+	const PALETTE: readonly RenColor[] = [
 		'primary',
 		'secondary',
 		'success',
@@ -95,7 +95,7 @@
 	}
 </script>
 
-<div class="lumi-stack lumi-stack--xl lumi-min-width--0">
+<div class="ren-stack ren-stack--xl ren-min-width--0">
 	<PageHeader title={t.title} subtitle={t.subtitle} icon={Palette} size="xl">
 		{#snippet actions()}
 			<Button variant="border" icon={RefreshCcw} onclick={resetPreferences}>{t.reset}</Button>
@@ -104,12 +104,12 @@
 
 	<Alert color="info" title={t.noticeTitle}>{t.notice}</Alert>
 
-	<div class="lumi-grid lumi-grid--columns-2 lumi-grid--gap-lg">
+	<div class="ren-grid ren-grid--columns-2 ren-grid--gap-lg">
 		<Card spaced>
 			{#snippet header()}
 				<Title title={t.theme} subtitle={t.themeSubtitle} level={2} size="md" />
 			{/snippet}
-			<div class="lumi-stack lumi-stack--lg">
+			<div class="ren-stack ren-stack--lg">
 				<SegmentedControl
 					value={colorScheme.preference}
 					options={themeOptions}
@@ -122,7 +122,7 @@
 					value={resolvedThemeLabel(colorScheme.resolved)[lang]}
 					icon={SunMoon}
 				/>
-				<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-sm">
+				<div class="ren-flex ren-flex--wrap ren-flex--gap-sm">
 					{#each PALETTE as color, index (color)}
 						<Chip {color}>{t.palette[index]}</Chip>
 					{/each}
@@ -135,7 +135,7 @@
 				<Title title={t.navigation} subtitle={t.navigationSubtitle} level={2} size="md" />
 			{/snippet}
 			<Fieldset legend={t.density}>
-				<div class="lumi-stack lumi-stack--sm">
+				<div class="ren-stack ren-stack--sm">
 					{#each t.modes as mode (mode.value)}
 						<Radio
 							bind:group={navigationMode.preference}

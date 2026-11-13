@@ -62,7 +62,7 @@ import PanelLeft from '@lucide/svelte/icons/panel-left';
 import PanelRight from '@lucide/svelte/icons/panel-right';
 import Zap from '@lucide/svelte/icons/zap';
 import Type from '@lucide/svelte/icons/type';
-import type { IconComponent } from '@lumi-ui/svelte';
+import type { IconComponent } from '@renui/svelte';
 import type { Lang, SitePath, Text } from '$lib/i18n';
 
 export interface NavItem {
@@ -228,8 +228,8 @@ export const COMPONENT_GROUPS: readonly NavGroup[] = [
 				es: 'Imágenes con disposición estable y estados de carga y error.'
 			}),
 			component('icon', 'Icon', Shapes, {
-				en: 'Lucide icons sized and colored with Lumi tokens.',
-				es: 'Iconos de Lucide con tamaño y color de los tokens de Lumi.'
+				en: 'Lucide icons sized and colored with RenUI tokens.',
+				es: 'Iconos de Lucide con tamaño y color de los tokens de RenUI.'
 			}),
 			component('icon-badge', 'IconBadge', BadgeCheck, {
 				en: 'An icon on a soft tile, in any color role.',
@@ -351,8 +351,8 @@ export const NAVIGATION: readonly NavEntry[] = [
 		label: { en: 'Home', es: 'Inicio' },
 		icon: House,
 		description: {
-			en: 'Lumi UI: an open source Svelte 5 component library with semantic tokens, in English and Spanish.',
-			es: 'Lumi UI: biblioteca open source de componentes Svelte 5 con tokens semánticos, en inglés y español.'
+			en: 'RenUI: an open source Svelte 5 component library with semantic tokens, in English and Spanish.',
+			es: 'RenUI: biblioteca open source de componentes Svelte 5 con tokens semánticos, en inglés y español.'
 		}
 	},
 	{
@@ -360,8 +360,8 @@ export const NAVIGATION: readonly NavEntry[] = [
 		label: { en: 'Get started', es: 'Empezar' },
 		icon: BookOpen,
 		description: {
-			en: 'Install Lumi UI, load its styles, pick a language and icons, and build your first screen.',
-			es: 'Instala Lumi UI, carga sus estilos, elige idioma e iconos y crea tu primera pantalla.'
+			en: 'Install RenUI, load its styles, pick a language and icons, and build your first screen.',
+			es: 'Instala RenUI, carga sus estilos, elige idioma e iconos y crea tu primera pantalla.'
 		}
 	},
 	{
@@ -403,8 +403,8 @@ export const NAVIGATION: readonly NavEntry[] = [
 		label: { en: 'Components', es: 'Componentes' },
 		icon: Boxes,
 		description: {
-			en: 'Every documented Lumi UI component, grouped by purpose, with examples to copy.',
-			es: 'Todos los componentes documentados de Lumi UI, agrupados por propósito, con ejemplos para copiar.'
+			en: 'Every documented RenUI component, grouped by purpose, with examples to copy.',
+			es: 'Todos los componentes documentados de RenUI, agrupados por propósito, con ejemplos para copiar.'
 		}
 	},
 	...COMPONENT_GROUPS,
@@ -418,8 +418,8 @@ export const NAVIGATION: readonly NavEntry[] = [
 				label: { en: 'Full form', es: 'Formulario completo' },
 				icon: ClipboardPenLine,
 				description: {
-					en: 'A Svelte 5 form with validation, selection and Lumi UI controls.',
-					es: 'Un formulario Svelte 5 con validación, selección y controles de Lumi UI.'
+					en: 'A Svelte 5 form with validation, selection and RenUI controls.',
+					es: 'Un formulario Svelte 5 con validación, selección y controles de RenUI.'
 				}
 			},
 			{
@@ -463,4 +463,4 @@ export const DOC_PAGES = NAV_ITEMS.flatMap(({ path }) => {
 
 /** Título de una página en el idioma pedido. */
 export const pageTitle = (item: NavItem, lang: Lang): string =>
-	item.path === '/' ? 'Lumi UI · Svelte 5' : `${item.label[lang]} · Lumi UI`;
+	item.path === '/' ? 'RenUI · Svelte 5' : `${item.label[lang]} · RenUI`;

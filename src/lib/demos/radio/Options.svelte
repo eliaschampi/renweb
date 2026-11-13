@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Radio } from '@lumi-ui/svelte';
+	import { Radio } from '@renui/svelte';
 
 	let plan = $state('team');
 </script>
 
-<div class="lumi-stack lumi-stack--sm" role="radiogroup" aria-label="Plan">
+<div class="ren-stack ren-stack--sm" role="radiogroup" aria-label="Plan">
 	<Radio
 		bind:group={plan}
 		name="plan"

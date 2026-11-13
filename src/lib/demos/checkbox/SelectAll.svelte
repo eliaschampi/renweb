@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Checkbox } from '@lumi-ui/svelte';
+	import { Checkbox } from '@renui/svelte';
 
 	const CHANNELS = ['Email', 'SMS', 'Push'];
 
@@ -11,7 +11,7 @@
 	}
 </script>
 
-<div class="lumi-stack lumi-stack--xs">
+<div class="ren-stack ren-stack--xs">
 	<Checkbox
 		checked={all}
 		indeterminate={!all && chosen.length > 0}

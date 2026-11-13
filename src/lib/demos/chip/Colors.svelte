@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Chip } from '@lumi-ui/svelte';
+	import { Chip } from '@renui/svelte';
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-flex--gap-xs">
+<div class="ren-flex ren-flex--wrap ren-flex--gap-xs">
 	<Chip color="primary">New</Chip>
 	<Chip color="secondary">Featured</Chip>
 	<Chip color="success">Active</Chip>

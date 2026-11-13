@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Tooltip } from '@lumi-ui/svelte';
+	import { Button, Tooltip } from '@renui/svelte';
 </script>
 
 <Tooltip text="Ask an administrator for access">

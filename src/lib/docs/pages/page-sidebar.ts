@@ -1,7 +1,7 @@
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { PageSidebar } from '@lumi-ui/svelte';`,
+	importLine: `import { PageSidebar } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Filters beside a list',
@@ -21,8 +21,8 @@ export default {
 			id: 'filters',
 			title: { en: 'Filters beside content', es: 'Filtros junto al contenido' },
 			text: {
-				en: 'Use lumi-layout--two-columns with lumi-page-sidebar-layout, and open the phone panel with bind:mobileOpen. It needs a whole page, so it is shown as code.',
-				es: 'Usa lumi-layout--two-columns con lumi-page-sidebar-layout, y abre el panel móvil con bind:mobileOpen. Necesita una página completa, así que se muestra como código.'
+				en: 'Use ren-layout--two-columns with ren-page-sidebar-layout, and open the phone panel with bind:mobileOpen. It needs a whole page, so it is shown as code.',
+				es: 'Usa ren-layout--two-columns con ren-page-sidebar-layout, y abre el panel móvil con bind:mobileOpen. Necesita una página completa, así que se muestra como código.'
 			},
 			demo: 'Filters',
 			preview: false

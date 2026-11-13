@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SidebarItem } from '@lumi-ui/svelte';
+	import { SidebarItem } from '@renui/svelte';
 	import { currentLang } from '$lib/i18n';
 
 	const { entries }: { entries: { id: string; title: string }[] } = $props();
@@ -24,11 +24,8 @@
 	});
 </script>
 
-<nav
-	class="lumi-page-sidebar__desktop lumi-stack lumi-stack--2xs"
-	aria-label={LABEL[currentLang()]}
->
-	<p class="lumi-text--sm lumi-font--semibold lumi-margin--none">{LABEL[currentLang()]}</p>
+<nav class="ren-page-sidebar__desktop ren-stack ren-stack--2xs" aria-label={LABEL[currentLang()]}>
+	<p class="ren-text--sm ren-font--semibold ren-margin--none">{LABEL[currentLang()]}</p>
 	{#each entries as { id, title } (id)}
 		<SidebarItem href={`#${id}`} level="sub" current={id === active}>{title}</SidebarItem>
 	{/each}

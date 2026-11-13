@@ -1,8 +1,8 @@
-import type { DialogProps } from '@lumi-ui/svelte';
+import type { DialogProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Dialog } from '@lumi-ui/svelte';`,
+	importLine: `import { Dialog } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Confirming a decision',
@@ -32,8 +32,8 @@ export default {
 			id: 'basic',
 			title: { en: 'Open and close', es: 'Abrir y cerrar' },
 			text: {
-				en: 'Keep the dialog mounted and control it with bind:open, because Lumi animates a change of open. The title also names the dialog for screen readers. Focus moves inside and returns to the button when it closes.',
-				es: 'Mantén el diálogo montado y contrólalo con bind:open, porque Lumi anima el cambio de open. El título también nombra el diálogo para los lectores de pantalla. El foco entra y vuelve al botón al cerrar.'
+				en: 'Keep the dialog mounted and control it with bind:open, because RenUI animates a change of open. The title also names the dialog for screen readers. Focus moves inside and returns to the button when it closes.',
+				es: 'Mantén el diálogo montado y contrólalo con bind:open, porque RenUI anima el cambio de open. El título también nombra el diálogo para los lectores de pantalla. El foco entra y vuelve al botón al cerrar.'
 			},
 			demo: 'Basic'
 		},

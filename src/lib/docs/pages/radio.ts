@@ -1,8 +1,8 @@
-import type { RadioProps } from '@lumi-ui/svelte';
+import type { RadioProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Radio } from '@lumi-ui/svelte';`,
+	importLine: `import { Radio } from '@renui/svelte';`,
 	use: {
 		en: ['One choice from a short list', 'Options that need an explanation'],
 		es: ['Una elección de una lista corta', 'Opciones que necesitan explicación']

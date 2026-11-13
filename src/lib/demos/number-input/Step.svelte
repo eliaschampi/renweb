@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { NumberInput } from '@lumi-ui/svelte';
+	import { NumberInput } from '@renui/svelte';
 
 	let price = $state(2.5);
 </script>

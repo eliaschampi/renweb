@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { Card } from '@lumi-ui/svelte';
+	import { Card } from '@renui/svelte';
 
 	const PLANS = ['Monthly', 'Yearly'];
 
 	let plan = $state('Monthly');
 </script>
 
-<div class="lumi-grid lumi-grid--cards lumi-grid--gap-md">
+<div class="ren-grid ren-grid--cards ren-grid--gap-md">
 	{#each PLANS as name (name)}
 		<Card clickable selected={name === plan} title={name} spaced onclick={() => (plan = name)} />
 	{/each}

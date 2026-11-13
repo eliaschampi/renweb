@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { DashboardDonutChart } from '@lumi-ui/svelte';
+	import { DashboardDonutChart } from '@renui/svelte';
 
 	const data = [
 		{ key: 'paid', label: 'Paid', value: 72, color: 'success' as const },

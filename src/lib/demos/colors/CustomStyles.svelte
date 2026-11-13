@@ -2,10 +2,10 @@
 
 <style>
 	.banner {
-		padding: var(--lumi-space-sm) var(--lumi-space-md);
-		color: var(--lumi-color-warning);
-		background: var(--lumi-color-warning-bg);
-		border: var(--lumi-border-width-thin) solid var(--lumi-color-warning);
-		border-radius: var(--lumi-radius-control);
+		padding: var(--ren-space-sm) var(--ren-space-md);
+		color: var(--ren-color-warning);
+		background: var(--ren-color-warning-bg);
+		border: var(--ren-border-width-thin) solid var(--ren-color-warning);
+		border-radius: var(--ren-radius-control);
 	}
 </style>

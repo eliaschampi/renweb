@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Search from '@lucide/svelte/icons/search';
-	import { Button, Input } from '@lumi-ui/svelte';
+	import { Button, Input } from '@renui/svelte';
 </script>
 
 <!-- Each page ships only the icons it renders. -->

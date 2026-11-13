@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { DashboardBarChart } from '@lumi-ui/svelte';
+	import { DashboardBarChart } from '@renui/svelte';
 
 	const data = [
 		{ key: 'north', label: 'North', value: 42 },

@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Button } from '@lumi-ui/svelte';
+	import { Button } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--sm">
-	<div class="lumi-flex lumi-justify--end">
+<div class="ren-stack ren-stack--sm">
+	<div class="ren-flex ren-justify--end">
 		<Button variant="filled">Save changes</Button>
 	</div>
-	<Button variant="filled" class="lumi-width--full">Sign in</Button>
+	<Button variant="filled" class="ren-width--full">Sign in</Button>
 </div>

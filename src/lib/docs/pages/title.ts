@@ -1,8 +1,8 @@
-import type { TitleProps } from '@lumi-ui/svelte';
+import type { TitleProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Title } from '@lumi-ui/svelte';`,
+	importLine: `import { Title } from '@renui/svelte';`,
 	use: {
 		en: ['Headings inside a page', 'Section titles with a subtitle or icon'],
 		es: ['Encabezados dentro de una página', 'Títulos de sección con subtítulo o icono']
@@ -55,14 +55,14 @@ export default {
 		},
 		{
 			name: 'color',
-			type: "LumiColor | 'text'",
+			type: "RenColor | 'text'",
 			default: "'text'",
 			text: { en: 'Color.', es: 'Color.' }
 		},
 		{ name: 'icon', type: 'IconSource', text: { en: 'Leading icon.', es: 'Icono inicial.' } },
 		{
 			name: 'iconColor',
-			type: "LumiColor | 'text'",
+			type: "RenColor | 'text'",
 			text: { en: 'Color of the icon.', es: 'Color del icono.' }
 		},
 		{

@@ -2,7 +2,7 @@
 	import Bold from '@lucide/svelte/icons/bold';
 	import Italic from '@lucide/svelte/icons/italic';
 	import Underline from '@lucide/svelte/icons/underline';
-	import { ToggleGroup, type ToggleGroupValue } from '@lumi-ui/svelte';
+	import { ToggleGroup, type ToggleGroupValue } from '@renui/svelte';
 
 	const STYLES = [
 		{ value: 'bold', icon: Bold, ariaLabel: 'Bold' },

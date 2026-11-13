@@ -1,8 +1,8 @@
-import type { SegmentedControlProps } from '@lumi-ui/svelte';
+import type { SegmentedControlProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { SegmentedControl } from '@lumi-ui/svelte';`,
+	importLine: `import { SegmentedControl } from '@renui/svelte';`,
 	use: {
 		en: ['Two to five short options', 'Switching a view or period'],
 		es: ['De dos a cinco opciones cortas', 'Cambiar una vista o un periodo']
@@ -56,7 +56,7 @@ export default {
 		},
 		{
 			name: 'options',
-			type: 'LumiChoiceOption[]',
+			type: 'RenChoiceOption[]',
 			text: {
 				en: 'Options: value, label, icon, ariaLabel.',
 				es: 'Opciones: value, label, icon, ariaLabel.'

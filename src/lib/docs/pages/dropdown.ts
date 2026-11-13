@@ -1,4 +1,4 @@
-import type { DropdownItemProps, DropdownProps } from '@lumi-ui/svelte';
+import type { DropdownItemProps, DropdownProps } from '@renui/svelte';
 import type { Doc, DocProp } from '../types';
 const ITEM_PROPS: DocProp<DropdownItemProps>[] = [
 	{ name: 'icon', type: 'IconSource', text: { en: 'Leading icon.', es: 'Icono inicial.' } },
@@ -33,7 +33,7 @@ const ITEM_PROPS: DocProp<DropdownItemProps>[] = [
 ];
 
 export default {
-	importLine: `import { Dropdown, DropdownItem } from '@lumi-ui/svelte';`,
+	importLine: `import { Dropdown, DropdownItem } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Secondary actions that do not fit in a toolbar',
@@ -81,8 +81,8 @@ export default {
 			id: 'content',
 			title: { en: 'Non-button triggers', es: 'Disparadores que no son botones' },
 			text: {
-				en: 'For an avatar or other plain content, use triggerContent and put the items in content. Lumi supplies the button, so give it an aria-label.',
-				es: 'Para un avatar u otro contenido simple, usa triggerContent y pon los items en content. Lumi aporta el botón, así que dale un aria-label.'
+				en: 'For an avatar or other plain content, use triggerContent and put the items in content. RenUI supplies the button, so give it an aria-label.',
+				es: 'Para un avatar u otro contenido simple, usa triggerContent y pon los items en content. RenUI aporta el botón, así que dale un aria-label.'
 			},
 			demo: 'Content'
 		},

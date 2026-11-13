@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Copy from '@lucide/svelte/icons/copy';
-	import { Button } from '@lumi-ui/svelte';
+	import { Button } from '@renui/svelte';
 	import { highlight } from '$lib/highlight';
 	import { currentLang } from '$lib/i18n';
 	import { toaster } from '$lib/toaster';
@@ -44,18 +44,18 @@
 	}
 </script>
 
-<figure class="code-block lumi-stack lumi-stack--xs lumi-min-width--0 lumi-margin--none">
+<figure class="code-block ren-stack ren-stack--xs ren-min-width--0 ren-margin--none">
 	<figcaption
-		class="lumi-flex lumi-justify--between lumi-align-items--center lumi-flex--gap-sm lumi-min-width--0"
+		class="ren-flex ren-justify--between ren-align-items--center ren-flex--gap-sm ren-min-width--0"
 	>
-		<span class="lumi-text--sm lumi-font--medium lumi-text-ellipsis">{label}</span>
+		<span class="ren-text--sm ren-font--medium ren-text-ellipsis">{label}</span>
 		<Button variant="ghost" size="sm" icon={Copy} aria-label={`${t.copy} ${label}`} onclick={copy}>
 			{t.copy}
 		</Button>
 	</figcaption>
 	<!-- svelte-ignore a11y_no_noninteractive_tabindex (La región desplazable necesita foco para desplazarse con teclado.) -->
 	<pre
-		class="lumi-scroll-well lumi-margin--none lumi-text--sm"
+		class="ren-scroll-well ren-margin--none ren-text--sm"
 		role="region"
 		tabindex="0"
 		aria-label={label}><code>{@html highlight(code)}</code></pre>
@@ -68,12 +68,12 @@
 		max-height: none;
 		overflow-x: auto;
 		tab-size: 2;
-		font-family: var(--lumi-font-family-mono);
-		line-height: var(--lumi-line-height-relaxed);
+		font-family: var(--ren-font-family-mono);
+		line-height: var(--ren-line-height-relaxed);
 	}
 
 	pre:focus-visible {
-		outline: var(--lumi-focus-outline);
-		outline-offset: var(--lumi-focus-outline-offset);
+		outline: var(--ren-focus-outline);
+		outline-offset: var(--ren-focus-outline-offset);
 	}
 </style>

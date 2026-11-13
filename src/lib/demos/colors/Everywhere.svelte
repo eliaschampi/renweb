@@ -1,10 +1,10 @@
 <script lang="ts">
 	import CircleCheck from '@lucide/svelte/icons/circle-check';
-	import { Alert, Button, Chip, IconBadge } from '@lumi-ui/svelte';
+	import { Alert, Button, Chip, IconBadge } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--md">
-	<div class="lumi-flex lumi-flex--wrap lumi-align-items--center lumi-flex--gap-sm">
+<div class="ren-stack ren-stack--md">
+	<div class="ren-flex ren-flex--wrap ren-align-items--center ren-flex--gap-sm">
 		<IconBadge icon={CircleCheck} color="success" />
 		<Chip color="success">Paid</Chip>
 		<Button variant="flat" color="success">Confirm</Button>

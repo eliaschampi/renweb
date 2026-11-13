@@ -1,8 +1,8 @@
-import type { EmptyStateProps } from '@lumi-ui/svelte';
+import type { EmptyStateProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { EmptyState } from '@lumi-ui/svelte';`,
+	importLine: `import { EmptyState } from '@renui/svelte';`,
 	use: {
 		en: [
 			'A list with no records yet',

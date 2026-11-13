@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Copy from '@lucide/svelte/icons/copy';
 	import Trash2 from '@lucide/svelte/icons/trash-2';
-	import { Card, Context, ContextItem } from '@lumi-ui/svelte';
+	import { Card, Context, ContextItem } from '@renui/svelte';
 
 	let menu = $state<Context>();
 </script>

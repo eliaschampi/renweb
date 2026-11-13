@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Alert, Button } from '@lumi-ui/svelte';
+	import { Alert, Button } from '@renui/svelte';
 
 	let visible = $state(true);
 </script>

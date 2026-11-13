@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Input } from '@lumi-ui/svelte';
+	import { Input } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--sm">
+<div class="ren-stack ren-stack--sm">
 	<Input label="Extra small" size="xs" placeholder="Type here" />
 	<Input label="Small" size="sm" placeholder="Type here" />
 	<Input label="Medium" placeholder="Type here" />

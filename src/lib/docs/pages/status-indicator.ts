@@ -1,8 +1,8 @@
-import type { StatusIndicatorProps } from '@lumi-ui/svelte';
+import type { StatusIndicatorProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { StatusIndicator } from '@lumi-ui/svelte';`,
+	importLine: `import { StatusIndicator } from '@renui/svelte';`,
 	use: {
 		en: ['A compact status beside a name', 'Online or connection states'],
 		es: ['Un estado compacto junto a un nombre', 'Estados de conexión']

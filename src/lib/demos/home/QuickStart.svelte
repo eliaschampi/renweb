@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Check from '@lucide/svelte/icons/check';
-	import { Alert, Button, Card, Input } from '@lumi-ui/svelte';
+	import { Alert, Button, Card, Input } from '@renui/svelte';
 
 	let name = $state('My project');
 	let saved = $state(false);
@@ -9,7 +9,7 @@
 
 <Card title="Your first screen" subtitle="Try the components right here" spaced>
 	<form
-		class="lumi-stack lumi-stack--md"
+		class="ren-stack ren-stack--md"
 		onsubmit={(event) => {
 			event.preventDefault();
 			saved = true;
@@ -27,7 +27,7 @@
 			type="submit"
 			variant="filled"
 			icon={Check}
-			class="lumi-width--full"
+			class="ren-width--full"
 			disabled={!name.trim()}
 		>
 			Try it

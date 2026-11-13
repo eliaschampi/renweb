@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Dropdown, DropdownItem } from '@lumi-ui/svelte';
+	import { Button, Dropdown, DropdownItem } from '@renui/svelte';
 
 	const ORDERS = ['Newest first', 'Oldest first', 'Name'];
 

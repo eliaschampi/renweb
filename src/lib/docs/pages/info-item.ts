@@ -1,8 +1,8 @@
-import type { InfoItemProps } from '@lumi-ui/svelte';
+import type { InfoItemProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { InfoItem } from '@lumi-ui/svelte';`,
+	importLine: `import { InfoItem } from '@renui/svelte';`,
 	use: {
 		en: [
 			'The details of a customer, order or student',

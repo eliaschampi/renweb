@@ -3,14 +3,14 @@ import type { Doc } from '../types';
 export default {
 	use: {
 		en: [
-			'lumi-stack: one thing under another, the most used class in real apps',
-			'lumi-flex: things in a row, with space between them',
-			'lumi-grid: columns that adapt to the screen'
+			'ren-stack: one thing under another, the most used class in real apps',
+			'ren-flex: things in a row, with space between them',
+			'ren-grid: columns that adapt to the screen'
 		],
 		es: [
-			'lumi-stack: una cosa bajo otra, la clase más usada en aplicaciones reales',
-			'lumi-flex: cosas en fila, con espacio entre ellas',
-			'lumi-grid: columnas que se adaptan a la pantalla'
+			'ren-stack: una cosa bajo otra, la clase más usada en aplicaciones reales',
+			'ren-flex: cosas en fila, con espacio entre ellas',
+			'ren-grid: columnas que se adaptan a la pantalla'
 		]
 	},
 	avoid: {
@@ -30,8 +30,8 @@ export default {
 			id: 'stack',
 			title: { en: 'Stack: one under another', es: 'Stack: una cosa bajo otra' },
 			text: {
-				en: 'Use lumi-stack with a size from 2xs to xl. Sizes also set the rhythm of a page: sm or md inside a block, lg or xl between sections. A stack stretches its children, so fields fill the width. Keep a button at its own width with a lumi-flex row, as in this form.',
-				es: 'Usa lumi-stack con un tamaño de 2xs a xl. Los tamaños también marcan el ritmo de una página: sm o md dentro de un bloque, lg o xl entre secciones. Un stack estira a sus hijos, así los campos ocupan todo el ancho. Deja un botón con su propio ancho usando una fila lumi-flex, como en este formulario.'
+				en: 'Use ren-stack with a size from 2xs to xl. Sizes also set the rhythm of a page: sm or md inside a block, lg or xl between sections. A stack stretches its children, so fields fill the width. Keep a button at its own width with a ren-flex row, as in this form.',
+				es: 'Usa ren-stack con un tamaño de 2xs a xl. Los tamaños también marcan el ritmo de una página: sm o md dentro de un bloque, lg o xl entre secciones. Un stack estira a sus hijos, así los campos ocupan todo el ancho. Deja un botón con su propio ancho usando una fila ren-flex, como en este formulario.'
 			},
 			demo: 'Stack'
 		},
@@ -39,8 +39,8 @@ export default {
 			id: 'flex',
 			title: { en: 'Flex: the toolbar pattern', es: 'Flex: el patrón de barra de herramientas' },
 			text: {
-				en: 'Title on one side and actions on the other is the most repeated row in any app. Combine lumi-flex with lumi-justify--between, center the items, and add lumi-flex--wrap so it never overflows on a phone.',
-				es: 'Título a un lado y acciones al otro es la fila más repetida de cualquier aplicación. Combina lumi-flex con lumi-justify--between, centra los elementos y añade lumi-flex--wrap para que nunca se desborde en un móvil.'
+				en: 'Title on one side and actions on the other is the most repeated row in any app. Combine ren-flex with ren-justify--between, center the items, and add ren-flex--wrap so it never overflows on a phone.',
+				es: 'Título a un lado y acciones al otro es la fila más repetida de cualquier aplicación. Combina ren-flex con ren-justify--between, centra los elementos y añade ren-flex--wrap para que nunca se desborde en un móvil.'
 			},
 			demo: 'Toolbar'
 		},
@@ -51,8 +51,8 @@ export default {
 				es: 'Grid: tarjetas que se ajustan a la pantalla'
 			},
 			text: {
-				en: 'lumi-grid--cards fits as many cards as the width allows, with no breakpoints to manage. Resize the window to see it.',
-				es: 'lumi-grid--cards coloca tantas tarjetas como permita el ancho, sin puntos de corte que gestionar. Cambia el tamaño de la ventana para verlo.'
+				en: 'ren-grid--cards fits as many cards as the width allows, with no breakpoints to manage. Resize the window to see it.',
+				es: 'ren-grid--cards coloca tantas tarjetas como permita el ancho, sin puntos de corte que gestionar. Cambia el tamaño de la ventana para verlo.'
 			},
 			demo: 'Cards'
 		},
@@ -60,8 +60,8 @@ export default {
 			id: 'columns',
 			title: { en: 'Fixed columns on large screens', es: 'Columnas fijas en pantallas grandes' },
 			text: {
-				en: 'Use lumi-grid--columns-2-lg, 3-lg or 4-lg for fields that sit side by side on desktop and stack on a phone.',
-				es: 'Usa lumi-grid--columns-2-lg, 3-lg o 4-lg para campos que van en paralelo en escritorio y se apilan en un móvil.'
+				en: 'Use ren-grid--columns-2-lg, 3-lg or 4-lg for fields that sit side by side on desktop and stack on a phone.',
+				es: 'Usa ren-grid--columns-2-lg, 3-lg o 4-lg para campos que van en paralelo en escritorio y se apilan en un móvil.'
 			},
 			demo: 'Columns'
 		},
@@ -69,8 +69,8 @@ export default {
 			id: 'truncate',
 			title: { en: 'Long text that must not overflow', es: 'Texto largo que no debe desbordarse' },
 			text: {
-				en: 'In a flex row, text refuses to shrink until you add lumi-min-width--0. Pair it with lumi-text-ellipsis to cut long names.',
-				es: 'En una fila flex, el texto no se encoge hasta que añades lumi-min-width--0. Combínalo con lumi-text-ellipsis para recortar nombres largos.'
+				en: 'In a flex row, text refuses to shrink until you add ren-min-width--0. Pair it with ren-text-ellipsis to cut long names.',
+				es: 'En una fila flex, el texto no se encoge hasta que añades ren-min-width--0. Combínalo con ren-text-ellipsis para recortar nombres largos.'
 			},
 			demo: 'Truncate'
 		}

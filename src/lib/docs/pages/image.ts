@@ -1,8 +1,8 @@
-import type { ImageProps } from '@lumi-ui/svelte';
+import type { ImageProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Image } from '@lumi-ui/svelte';`,
+	importLine: `import { Image } from '@renui/svelte';`,
 	use: {
 		en: ['Photos with loading and error states', 'Keeping a layout stable before an image arrives'],
 		es: [

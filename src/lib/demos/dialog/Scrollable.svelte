@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Dialog } from '@lumi-ui/svelte';
+	import { Button, Dialog } from '@renui/svelte';
 
 	const CHAPTERS = Array.from({ length: 40 }, (_, index) => `Chapter ${index + 1}`);
 

@@ -1,4 +1,4 @@
-import type { MessageProps, MessageListProps } from '@lumi-ui/svelte';
+import type { MessageProps, MessageListProps } from '@renui/svelte';
 import type { Doc, DocProp } from '../types';
 const LIST_PROPS: DocProp<MessageListProps>[] = [
 	{
@@ -18,7 +18,7 @@ const LIST_PROPS: DocProp<MessageListProps>[] = [
 ];
 
 export default {
-	importLine: `import { Message, MessageList } from '@lumi-ui/svelte';`,
+	importLine: `import { Message, MessageList } from '@renui/svelte';`,
 	use: {
 		en: ['Chats and comment threads', 'Conversations between people'],
 		es: ['Chats e hilos de comentarios', 'Conversaciones entre personas']

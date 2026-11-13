@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Select, type SelectValue } from '@lumi-ui/svelte';
+	import { Select, type SelectValue } from '@renui/svelte';
 
 	let city = $state<SelectValue | null>(null);
 	const error = $derived(city ? undefined : 'Choose a city to continue.');

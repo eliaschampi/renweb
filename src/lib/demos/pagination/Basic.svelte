@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Pagination } from '@lumi-ui/svelte';
+	import { Pagination } from '@renui/svelte';
 
 	let page = $state(3);
 </script>

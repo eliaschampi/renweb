@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Textarea } from '@lumi-ui/svelte';
+	import { Textarea } from '@renui/svelte';
 
 	let bio = $state('');
 </script>

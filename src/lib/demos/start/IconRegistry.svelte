@@ -1,12 +1,12 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { registerIcons } from '@lumi-ui/svelte';
-	import { lumiIcons } from '@lumi-ui/svelte/icons';
+	import { registerIcons } from '@renui/svelte';
+	import { renIcons } from '@renui/svelte/icons';
 
 	const { children }: { children: Snippet } = $props();
 
 	// Only if you store icon names as data, for example from an API.
-	registerIcons(lumiIcons);
+	registerIcons(renIcons);
 </script>
 
 {@render children()}

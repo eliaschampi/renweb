@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { DashboardChart } from '@lumi-ui/svelte';
+	import { DashboardChart } from '@renui/svelte';
 
 	const series = [
 		{

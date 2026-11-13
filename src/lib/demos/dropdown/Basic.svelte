@@ -2,7 +2,7 @@
 	import Download from '@lucide/svelte/icons/download';
 	import Pencil from '@lucide/svelte/icons/pencil';
 	import Trash2 from '@lucide/svelte/icons/trash-2';
-	import { Button, Dropdown, DropdownItem } from '@lumi-ui/svelte';
+	import { Button, Dropdown, DropdownItem } from '@renui/svelte';
 </script>
 
 <Dropdown>

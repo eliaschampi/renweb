@@ -1,8 +1,8 @@
-import type { NumberInputProps } from '@lumi-ui/svelte';
+import type { NumberInputProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { NumberInput } from '@lumi-ui/svelte';`,
+	importLine: `import { NumberInput } from '@renui/svelte';`,
 	use: {
 		en: ['Quantities with limits', 'Values people adjust by small steps'],
 		es: ['Cantidades con límites', 'Valores que se ajustan en pasos pequeños']

@@ -1,8 +1,8 @@
-import type { AlertProps } from '@lumi-ui/svelte';
+import type { AlertProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Alert } from '@lumi-ui/svelte';`,
+	importLine: `import { Alert } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Situations that stay true: a closed period, an expired plan',

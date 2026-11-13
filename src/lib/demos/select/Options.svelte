@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Select, type SelectValue } from '@lumi-ui/svelte';
+	import { Select, type SelectValue } from '@renui/svelte';
 
 	const ROLES = [
 		{ value: 'admin', label: 'Administrator' },

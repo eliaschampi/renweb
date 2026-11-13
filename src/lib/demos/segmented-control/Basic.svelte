@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SegmentedControl } from '@lumi-ui/svelte';
+	import { SegmentedControl } from '@renui/svelte';
 
 	const PERIODS = [
 		{ value: 'day', label: 'Day' },

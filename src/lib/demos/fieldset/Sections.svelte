@@ -1,23 +1,23 @@
 <script lang="ts">
-	import { Button, Fieldset, Input, Select } from '@lumi-ui/svelte';
+	import { Button, Fieldset, Input, Select } from '@renui/svelte';
 </script>
 
-<form class="lumi-stack lumi-stack--lg">
+<form class="ren-stack ren-stack--lg">
 	<Fieldset legend="Personal details">
-		<div class="lumi-grid lumi-grid--columns-2-lg lumi-grid--gap-md">
+		<div class="ren-grid ren-grid--columns-2-lg ren-grid--gap-md">
 			<Input label="First name" placeholder="Ana" />
 			<Input label="Last name" placeholder="Torres" />
 		</div>
 	</Fieldset>
 
 	<Fieldset legend="Delivery">
-		<div class="lumi-grid lumi-grid--columns-2-lg lumi-grid--gap-md">
+		<div class="ren-grid ren-grid--columns-2-lg ren-grid--gap-md">
 			<Input label="Address" placeholder="Street and number" />
 			<Select label="City" placeholder="Choose a city" options={['Lima', 'Cusco']} />
 		</div>
 	</Fieldset>
 
-	<div class="lumi-flex lumi-justify--end lumi-flex--gap-sm">
+	<div class="ren-flex ren-justify--end ren-flex--gap-sm">
 		<Button variant="ghost">Cancel</Button>
 		<Button type="submit" variant="filled">Save</Button>
 	</div>

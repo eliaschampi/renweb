@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { SegmentedControl } from '@lumi-ui/svelte';
+	import { SegmentedControl } from '@renui/svelte';
 	import CodeBlock from '$lib/CodeBlock.svelte';
 	import { currentLang } from '$lib/i18n';
 
 	/** Paquetes a instalar; Lucide es opcional, solo para importar iconos por componente. */
-	const { packages = ['@lumi-ui/svelte'] }: { packages?: readonly string[] } = $props();
+	const { packages = ['@renui/svelte'] }: { packages?: readonly string[] } = $props();
 
 	const MANAGERS = [
 		{ value: 'pnpm', label: 'pnpm' },
@@ -20,7 +20,7 @@
 	);
 </script>
 
-<div class="lumi-stack lumi-stack--sm lumi-min-width--0">
+<div class="ren-stack ren-stack--sm ren-min-width--0">
 	<SegmentedControl bind:value={manager} options={MANAGERS} aria-label={ARIA[currentLang()]} />
 	<CodeBlock code={command} label="Terminal" />
 </div>

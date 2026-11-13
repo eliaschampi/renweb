@@ -1,8 +1,8 @@
-import type { TabsProps } from '@lumi-ui/svelte';
+import type { TabsProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Tabs } from '@lumi-ui/svelte';`,
+	importLine: `import { Tabs } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Sections of one record or page',

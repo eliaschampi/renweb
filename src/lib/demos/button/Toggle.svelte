@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Pin from '@lucide/svelte/icons/pin';
-	import { Button } from '@lumi-ui/svelte';
+	import { Button } from '@renui/svelte';
 
 	let pinned = $state(false);
 </script>

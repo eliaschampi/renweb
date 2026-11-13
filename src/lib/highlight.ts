@@ -1,7 +1,7 @@
 /**
  * Resaltado mínimo de Svelte, TypeScript y CSS. Un solo patrón recorre el código
  * una vez; lo que no coincide queda como texto. Los colores son utilidades de
- * Lumi, así que siguen al tema y a la marca sin CSS propio ni otra biblioteca.
+ * RenUI, así que siguen al tema y a la marca sin CSS propio ni otra biblioteca.
  */
 const TOKEN = new RegExp(
 	[
@@ -16,12 +16,12 @@ const TOKEN = new RegExp(
 );
 
 const CLASSES: Record<string, string> = {
-	comment: 'lumi-text--muted',
-	string: 'lumi-text--success',
-	tag: 'lumi-text--primary',
-	keyword: 'lumi-text--primary',
-	attr: 'lumi-text--secondary',
-	token: 'lumi-text--info'
+	comment: 'ren-text--muted',
+	string: 'ren-text--success',
+	tag: 'ren-text--primary',
+	keyword: 'ren-text--primary',
+	attr: 'ren-text--secondary',
+	token: 'ren-text--info'
 };
 
 const ESCAPES: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };

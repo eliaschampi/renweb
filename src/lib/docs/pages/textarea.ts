@@ -1,8 +1,8 @@
-import type { TextareaProps } from '@lumi-ui/svelte';
+import type { TextareaProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Textarea } from '@lumi-ui/svelte';`,
+	importLine: `import { Textarea } from '@renui/svelte';`,
 	use: {
 		en: ['Comments, notes and descriptions', 'Any text longer than one line'],
 		es: ['Comentarios, notas y descripciones', 'Cualquier texto de más de una línea']

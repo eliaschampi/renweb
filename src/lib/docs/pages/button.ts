@@ -1,8 +1,8 @@
-import type { ButtonProps } from '@lumi-ui/svelte';
+import type { ButtonProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Button } from '@lumi-ui/svelte';`,
+	importLine: `import { Button } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Actions: save, delete, open a dialog',
@@ -59,8 +59,8 @@ export default {
 			id: 'width',
 			title: { en: 'Width', es: 'Ancho' },
 			text: {
-				en: 'A button is as wide as its label. A lumi-stack or a spaced Card stretches its children, which is right for fields but rarely for buttons, so put the button in a lumi-flex row. When full width is what you want, as in a sign-in form, say so with lumi-width--full.',
-				es: 'Un botón mide lo que su etiqueta. Un lumi-stack o una Card con spaced estiran a sus hijos, lo que va bien en campos pero rara vez en botones, así que pon el botón en una fila lumi-flex. Cuando sí quieras todo el ancho, como en un formulario de acceso, decláralo con lumi-width--full.'
+				en: 'A button is as wide as its label. A ren-stack or a spaced Card stretches its children, which is right for fields but rarely for buttons, so put the button in a ren-flex row. When full width is what you want, as in a sign-in form, say so with ren-width--full.',
+				es: 'Un botón mide lo que su etiqueta. Un ren-stack o una Card con spaced estiran a sus hijos, lo que va bien en campos pero rara vez en botones, así que pon el botón en una fila ren-flex. Cuando sí quieras todo el ancho, como en un formulario de acceso, decláralo con ren-width--full.'
 			},
 			demo: 'Width'
 		},

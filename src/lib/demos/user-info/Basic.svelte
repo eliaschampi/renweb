@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Chip, UserInfo } from '@lumi-ui/svelte';
+	import { Chip, UserInfo } from '@renui/svelte';
 </script>
 
-<div class="lumi-stack lumi-stack--md">
+<div class="ren-stack ren-stack--md">
 	<UserInfo name="Ana Torres" description="ana@example.com" />
 	<UserInfo name="Bruno Díaz" description="Sales" color="secondary">
 		{#snippet trailing()}

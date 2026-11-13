@@ -2,30 +2,30 @@
 	import BookOpen from '@lucide/svelte/icons/book-open';
 	import Boxes from '@lucide/svelte/icons/boxes';
 	import ClipboardPenLine from '@lucide/svelte/icons/clipboard-pen-line';
-	import { Alert, Card, Collapse, PageHeader, QuickAccessCard, Title } from '@lumi-ui/svelte';
+	import { Alert, Card, Collapse, PageHeader, QuickAccessCard, Title } from '@renui/svelte';
 	import CodeBlock from '$lib/CodeBlock.svelte';
 	import InstallCommand from '$lib/InstallCommand.svelte';
 	import { currentLang, link } from '$lib/i18n';
-	import { docsUrl, libraryUrl, lumiVersion, sveltePeer } from '$lib/site';
+	import { docsUrl, libraryUrl, renVersion, sveltePeer } from '$lib/site';
 	import type { PageProps } from './$types';
 
 	const { data }: PageProps = $props();
 	const QuickStart = $derived(data.QuickStart);
 
-	const PATTERNS_IMPORT = `import '@lumi-ui/svelte/styles/patterns.css';`;
+	const PATTERNS_IMPORT = `import '@renui/svelte/styles/patterns.css';`;
 
 	const COPY = {
 		en: {
-			title: 'Get started with Lumi',
+			title: 'Get started with RenUI',
 			subtitle:
 				'Install it, load the styles, pick a language and icons, and build your first screen.',
 			requirement:
-				'You need a Svelte 5 project. Lumi works with Svelte and SvelteKit and needs no backend. This is the version this site uses.',
+				'You need a Svelte 5 project. RenUI works with Svelte and SvelteKit and needs no backend. This is the version this site uses.',
 			installTitle: '1. Install the packages',
 			installNote: 'is optional: install it to import icons as components (step 4).',
 			stylesTitle: '2. Load the styles once',
 			stylesIntro:
-				'In SvelteKit, do it in the root layout. @lumi-ui/svelte/styles includes tokens, base styles, layouts and utilities. Built-in copy is English by default; to use Spanish, call setLumiLocale with lumiEs as shown here.',
+				'In SvelteKit, do it in the root layout. @renui/svelte/styles includes tokens, base styles, layouts and utilities. Built-in copy is English by default; to use Spanish, call setRenLocale with renEs as shown here.',
 			stylesNote:
 				'Styles use cascade layers, so your own unlayered CSS always wins. Operational patterns such as filter summaries and toolbars are optional: import patterns.css only in the layouts that use them.',
 			patternsLabel: 'Optional patterns',
@@ -59,15 +59,15 @@
 			formsText: 'Connected controls and native validation.'
 		},
 		es: {
-			title: 'Empieza con Lumi',
+			title: 'Empieza con RenUI',
 			subtitle: 'Instálala, carga los estilos, elige idioma e iconos y crea tu primera pantalla.',
 			requirement:
-				'Necesitas un proyecto Svelte 5. Lumi funciona con Svelte y SvelteKit y no requiere un backend. Esta es la versión que usa este sitio.',
+				'Necesitas un proyecto Svelte 5. RenUI funciona con Svelte y SvelteKit y no requiere un backend. Esta es la versión que usa este sitio.',
 			installTitle: '1. Instala los paquetes',
 			installNote: 'es opcional: instálalo para importar iconos como componentes (paso 4).',
 			stylesTitle: '2. Carga los estilos una sola vez',
 			stylesIntro:
-				'En SvelteKit, hazlo en el layout raíz. @lumi-ui/svelte/styles incluye tokens, estilos base, layouts y utilidades. La copia integrada está en inglés por defecto; para usar español, llama a setLumiLocale con lumiEs como se muestra aquí.',
+				'En SvelteKit, hazlo en el layout raíz. @renui/svelte/styles incluye tokens, estilos base, layouts y utilidades. La copia integrada está en inglés por defecto; para usar español, llama a setRenLocale con renEs como se muestra aquí.',
 			stylesNote:
 				'Los estilos usan capas de cascada, así que tu CSS sin capa siempre gana. Los patrones operativos, como resúmenes de filtros y barras de herramientas, son opcionales: importa patterns.css solo en los layouts que los usan.',
 			patternsLabel: 'Patrones opcionales',
@@ -105,17 +105,16 @@
 	const t = $derived(COPY[currentLang()]);
 </script>
 
-<div class="lumi-stack lumi-stack--xl lumi-min-width--0">
+<div class="ren-stack ren-stack--xl ren-min-width--0">
 	<PageHeader title={t.title} subtitle={t.subtitle} icon={BookOpen} size="xl" />
 
-	<Alert color="info" title={`Lumi UI ${lumiVersion} · Svelte ${sveltePeer}`}>{t.requirement}</Alert
-	>
+	<Alert color="info" title={`RenUI ${renVersion} · Svelte ${sveltePeer}`}>{t.requirement}</Alert>
 
 	<Card spaced>
 		{#snippet header()}<Title title={t.installTitle} level={2} size="lg" />{/snippet}
-		<div class="lumi-stack lumi-stack--sm lumi-min-width--0">
-			<InstallCommand packages={['@lumi-ui/svelte', '@lucide/svelte']} />
-			<p class="lumi-text--sm lumi-text--muted lumi-margin--none">
+		<div class="ren-stack ren-stack--sm ren-min-width--0">
+			<InstallCommand packages={['@renui/svelte', '@lucide/svelte']} />
+			<p class="ren-text--sm ren-text--muted ren-margin--none">
 				<code>@lucide/svelte</code>
 				{t.installNote}
 			</p>
@@ -124,17 +123,17 @@
 
 	<Card spaced>
 		{#snippet header()}<Title title={t.stylesTitle} level={2} size="lg" />{/snippet}
-		<div class="lumi-stack lumi-stack--md lumi-min-width--0">
-			<p class="lumi-margin--none">{t.stylesIntro}</p>
+		<div class="ren-stack ren-stack--md ren-min-width--0">
+			<p class="ren-margin--none">{t.stylesIntro}</p>
 			<CodeBlock code={data.rootLayout} label="src/routes/+layout.svelte" />
-			<p class="lumi-text--sm lumi-text--muted lumi-margin--none">{t.stylesNote}</p>
+			<p class="ren-text--sm ren-text--muted ren-margin--none">{t.stylesNote}</p>
 			<CodeBlock code={PATTERNS_IMPORT} label={t.patternsLabel} />
 		</div>
 	</Card>
 
-	<section class="lumi-stack lumi-stack--md" aria-labelledby="first-screen">
+	<section class="ren-stack ren-stack--md" aria-labelledby="first-screen">
 		<Title id="first-screen" title={t.firstTitle} subtitle={t.firstSubtitle} level={2} size="lg" />
-		<div class="lumi-grid lumi-grid--columns-2 lumi-grid--gap-lg">
+		<div class="ren-grid ren-grid--columns-2 ren-grid--gap-lg">
 			<QuickStart />
 			<Card spaced><CodeBlock code={data.quickStartCode} label="src/routes/+page.svelte" /></Card>
 		</div>
@@ -142,12 +141,12 @@
 
 	<Card spaced>
 		{#snippet header()}<Title title={t.iconsTitle} level={2} size="lg" />{/snippet}
-		<div class="lumi-stack lumi-stack--md lumi-min-width--0">
-			<p class="lumi-margin--none">{t.iconsIntro}</p>
+		<div class="ren-stack ren-stack--md ren-min-width--0">
+			<p class="ren-margin--none">{t.iconsIntro}</p>
 			<CodeBlock code={data.icons} label={t.iconsLabel} />
 			<Collapse title={t.registryTitle}>
-				<div class="lumi-stack lumi-stack--sm lumi-min-width--0">
-					<p class="lumi-text--sm lumi-text--muted lumi-margin--none">{t.registryNote}</p>
+				<div class="ren-stack ren-stack--sm ren-min-width--0">
+					<p class="ren-text--sm ren-text--muted ren-margin--none">{t.registryNote}</p>
 					<CodeBlock code={data.iconRegistry} label={t.registryLabel} />
 				</div>
 			</Collapse>
@@ -156,31 +155,31 @@
 
 	<Card spaced>
 		{#snippet header()}<Title title={t.schemeTitle} level={2} size="lg" />{/snippet}
-		<div class="lumi-stack lumi-stack--md lumi-min-width--0">
-			<p class="lumi-margin--none">{t.schemeIntro}</p>
+		<div class="ren-stack ren-stack--md ren-min-width--0">
+			<p class="ren-margin--none">{t.schemeIntro}</p>
 			<CodeBlock code={data.colorScheme} label={t.schemeLabel} />
-			<p class="lumi-text--sm lumi-text--muted lumi-margin--none">
+			<p class="ren-text--sm ren-text--muted ren-margin--none">
 				{t.schemeNote}
-				<a href={link('/settings')} class="lumi-text--primary">{t.schemeLink}</a>.
+				<a href={link('/settings')} class="ren-text--primary">{t.schemeLink}</a>.
 			</p>
 		</div>
 	</Card>
 
 	<Card spaced>
 		{#snippet header()}<Title title={t.upgradeTitle} level={2} size="lg" />{/snippet}
-		<div class="lumi-stack lumi-stack--md lumi-min-width--0">
-			<p class="lumi-margin--none">{t.upgradeIntro}</p>
-			<p class="lumi-text--sm lumi-text--muted lumi-margin--none">
+		<div class="ren-stack ren-stack--md ren-min-width--0">
+			<p class="ren-margin--none">{t.upgradeIntro}</p>
+			<p class="ren-text--sm ren-text--muted ren-margin--none">
 				{t.upgradeNote}
-				<a href={`${docsUrl}/UPGRADE.md`} class="lumi-text--primary">{t.upgradeLink}</a>.
+				<a href={`${docsUrl}/UPGRADE.md`} class="ren-text--primary">{t.upgradeLink}</a>.
 				{t.issueNote}
-				<a href={`${libraryUrl}/issues`} class="lumi-text--primary">{t.issueLink}</a>
+				<a href={`${libraryUrl}/issues`} class="ren-text--primary">{t.issueLink}</a>
 				{t.issueEnd}
 			</p>
 		</div>
 	</Card>
 
-	<div class="lumi-grid lumi-grid--columns-2 lumi-grid--gap-md">
+	<div class="ren-grid ren-grid--columns-2 ren-grid--gap-md">
 		<QuickAccessCard
 			href={link('/components')}
 			title={t.componentsTitle}

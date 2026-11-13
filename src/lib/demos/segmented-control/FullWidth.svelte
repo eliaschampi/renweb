@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SegmentedControl } from '@lumi-ui/svelte';
+	import { SegmentedControl } from '@renui/svelte';
 
 	const OPTIONS = [
 		{ value: 'in', label: 'Income' },

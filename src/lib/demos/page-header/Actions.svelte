@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Plus from '@lucide/svelte/icons/plus';
 	import Users from '@lucide/svelte/icons/users';
-	import { Button, PageHeader } from '@lumi-ui/svelte';
+	import { Button, PageHeader } from '@renui/svelte';
 </script>
 
 <PageHeader title="Customers" subtitle="Everyone who has bought from you" icon={Users}>

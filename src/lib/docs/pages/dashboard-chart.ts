@@ -2,11 +2,11 @@ import type {
 	DashboardChartProps,
 	DashboardBarChartProps,
 	DashboardDonutChartProps
-} from '@lumi-ui/svelte';
+} from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { DashboardChart, DashboardBarChart, DashboardDonutChart } from '@lumi-ui/svelte';`,
+	importLine: `import { DashboardChart, DashboardBarChart, DashboardDonutChart } from '@renui/svelte';`,
 	use: {
 		en: ['Trends over time', 'Comparing a few categories', 'Parts of a whole'],
 		es: ['Tendencias en el tiempo', 'Comparar pocas categorías', 'Partes de un todo']

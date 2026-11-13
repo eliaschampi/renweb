@@ -1,8 +1,8 @@
-import type { InputProps } from '@lumi-ui/svelte';
+import type { InputProps } from '@renui/svelte';
 import type { Doc } from '../types';
 
 export default {
-	importLine: `import { Input } from '@lumi-ui/svelte';`,
+	importLine: `import { Input } from '@renui/svelte';`,
 	use: {
 		en: [
 			'Text, email, password and search fields',

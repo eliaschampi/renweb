@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ToggleGroup, type ToggleGroupValue } from '@lumi-ui/svelte';
+	import { ToggleGroup, type ToggleGroupValue } from '@renui/svelte';
 
 	const CHANNELS = [
 		{ value: 'email', label: 'Email' },

@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Alert, Button, Input } from '@lumi-ui/svelte';
+	import { Alert, Button, Input } from '@renui/svelte';
 
 	let error = $state('');
 </script>
 
 <form
-	class="lumi-stack lumi-stack--md"
+	class="ren-stack ren-stack--md"
 	onsubmit={(event) => {
 		event.preventDefault();
 		error = 'We could not sign you in. Check your details and try again.';
@@ -15,7 +15,7 @@
 		<Alert color="danger">{error}</Alert>
 	{/if}
 	<Input label="Email" type="email" placeholder="you@example.com" />
-	<div class="lumi-flex lumi-justify--end">
+	<div class="ren-flex ren-justify--end">
 		<Button type="submit" variant="filled">Sign in</Button>
 	</div>
 </form>

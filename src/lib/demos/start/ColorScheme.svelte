@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Button } from '@lumi-ui/svelte';
-	import { ColorSchemeScript, createColorScheme } from '@lumi-ui/svelte/color-scheme';
+	import { Button } from '@renui/svelte';
+	import { ColorSchemeScript, createColorScheme } from '@renui/svelte/color-scheme';
 
 	const theme = createColorScheme();
 	onMount(theme.start);

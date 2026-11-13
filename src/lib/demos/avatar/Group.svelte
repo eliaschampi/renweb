@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AvatarGroup } from '@lumi-ui/svelte';
+	import { AvatarGroup } from '@renui/svelte';
 </script>
 
 <AvatarGroup

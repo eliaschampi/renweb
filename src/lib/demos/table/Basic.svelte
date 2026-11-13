@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Chip, Table, type LumiColor } from '@lumi-ui/svelte';
+	import { Chip, Table, type RenColor } from '@renui/svelte';
 
 	interface Order {
 		id: number;
@@ -8,7 +8,7 @@
 		status: 'paid' | 'pending';
 	}
 
-	const STATUS: Record<Order['status'], { label: string; color: LumiColor }> = {
+	const STATUS: Record<Order['status'], { label: string; color: RenColor }> = {
 		paid: { label: 'Paid', color: 'success' },
 		pending: { label: 'Pending', color: 'warning' }
 	};
@@ -26,12 +26,12 @@
 	{#snippet thead()}
 		<th scope="col">Customer</th>
 		<th scope="col">Status</th>
-		<th scope="col" class="lumi-text--right">Total</th>
+		<th scope="col" class="ren-text--right">Total</th>
 	{/snippet}
 
 	{#snippet row({ row })}
-		<td class="lumi-font--medium">{row.customer}</td>
+		<td class="ren-font--medium">{row.customer}</td>
 		<td><Chip color={STATUS[row.status].color} size="sm">{STATUS[row.status].label}</Chip></td>
-		<td class="lumi-text--right">{row.total}</td>
+		<td class="ren-text--right">{row.total}</td>
 	{/snippet}
 </Table>

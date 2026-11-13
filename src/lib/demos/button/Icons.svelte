@@ -3,10 +3,10 @@
 	import Pencil from '@lucide/svelte/icons/pencil';
 	import Plus from '@lucide/svelte/icons/plus';
 	import Trash2 from '@lucide/svelte/icons/trash-2';
-	import { Button, Tooltip } from '@lumi-ui/svelte';
+	import { Button, Tooltip } from '@renui/svelte';
 </script>
 
-<div class="lumi-flex lumi-flex--wrap lumi-align-items--center lumi-flex--gap-sm">
+<div class="ren-flex ren-flex--wrap ren-align-items--center ren-flex--gap-sm">
 	<Button variant="filled" icon={Plus}>New record</Button>
 	<Button variant="border" icon={ArrowRight} iconAfter>Continue</Button>
 
