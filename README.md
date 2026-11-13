@@ -80,8 +80,8 @@ pnpm run check
 pnpm run build
 ```
 
-Para revisar Lumen antes de publicar la siguiente versión, usa el checkout hermano de
-`renui` ya empaquetado:
+Para revisar cambios de RenUI antes de publicar la siguiente versión, usa el checkout
+hermano de `renui` ya empaquetado:
 
 ```bash
 pnpm --dir ../renui run package
@@ -91,9 +91,9 @@ PAGES_BASE_PATH=/renweb pnpm run build
 pnpm run dev
 ```
 
-El enlace es local: CI continúa usando la versión publicada del lockfile. Después de
-publicar RenUI 2, actualiza el paquete y el lockfile antes de desplegar el sitio. Para
-volver a la dependencia publicada, ejecuta `pnpm install --frozen-lockfile`.
+El enlace es local: CI continúa usando la versión publicada del lockfile. Tras publicar
+una versión nueva de RenUI, actualiza el paquete y el lockfile antes de desplegar el
+sitio. Para volver a la dependencia publicada, ejecuta `pnpm install --frozen-lockfile`.
 
 `private: true` evita publicar el sitio como otro paquete npm. El código del sitio es público y tiene licencia MIT; el paquete distribuido es `@renui/svelte`.
 

@@ -1,7 +1,8 @@
 /**
  * Resaltado mínimo de Svelte, TypeScript y CSS. Un solo patrón recorre el código
- * una vez; lo que no coincide queda como texto. Los colores son utilidades de
- * RenUI, así que siguen al tema y a la marca sin CSS propio ni otra biblioteca.
+ * una vez; lo que no coincide queda como texto. Los colores son roles de tono de
+ * RenUI (`.ren-tone`), así que siguen al tema y a la marca; `CodeBlock` aplica la
+ * tinta del tono, que garantiza contraste de lectura sobre el pozo de código.
  */
 const TOKEN = new RegExp(
 	[
@@ -17,11 +18,11 @@ const TOKEN = new RegExp(
 
 const CLASSES: Record<string, string> = {
 	comment: 'ren-text--muted',
-	string: 'ren-text--success',
-	tag: 'ren-text--primary',
-	keyword: 'ren-text--primary',
-	attr: 'ren-text--secondary',
-	token: 'ren-text--info'
+	string: 'ren-tone ren-tone--success',
+	tag: 'ren-tone',
+	keyword: 'ren-tone',
+	attr: 'ren-tone ren-tone--secondary',
+	token: 'ren-tone ren-tone--info'
 };
 
 const ESCAPES: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };

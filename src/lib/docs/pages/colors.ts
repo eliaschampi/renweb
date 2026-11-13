@@ -46,8 +46,8 @@ export default {
 			id: 'tokens',
 			title: { en: 'Four tokens per role', es: 'Cuatro tokens por rol' },
 			text: {
-				en: 'Each role comes in four tokens. --ren-color-{role} is the accent for text, borders and icons. Use -solid for strong fills, and always put -foreground on top of it, because that pair is what guarantees readable contrast. Use -bg for soft tinted backgrounds.',
-				es: 'Cada rol trae cuatro tokens. --ren-color-{role} es el acento para texto, bordes e iconos. Usa -solid para rellenos fuertes y pon siempre -foreground encima, porque esa pareja es la que garantiza un contraste legible. Usa -bg para fondos suaves.'
+				en: 'Each role comes in four tokens. --ren-color-{role} is the accent for borders, icons and text on plain surfaces. Use -solid for strong fills, and always put -foreground on top of it, because that pair is what guarantees readable contrast. Use -bg for soft tinted backgrounds and keep --ren-color-text on top: the accent alone can fall short of AA contrast on a tint.',
+				es: 'Cada rol trae cuatro tokens. --ren-color-{role} es el acento para bordes, iconos y texto sobre superficies lisas. Usa -solid para rellenos fuertes y pon siempre -foreground encima, porque esa pareja es la que garantiza un contraste legible. Usa -bg para fondos suaves y deja --ren-color-text encima: el acento solo puede quedarse corto del contraste AA sobre un tinte.'
 			},
 			demo: 'CustomStyles'
 		},

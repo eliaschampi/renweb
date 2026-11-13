@@ -72,6 +72,12 @@
 		line-height: var(--ren-line-height-relaxed);
 	}
 
+	/* `.ren-text--{color}` usa el color de marca crudo, que no alcanza AA sobre el pozo en claro;
+	   la tinta del tono conserva el matiz con contraste de lectura en ambos temas. */
+	code :global(.ren-tone) {
+		color: var(--ren-tone-ink);
+	}
+
 	pre:focus-visible {
 		outline: var(--ren-focus-outline);
 		outline-offset: var(--ren-focus-outline-offset);
